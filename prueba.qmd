@@ -7,9 +7,7 @@ Esto es lo que quiero hacer con lo de la cefor:
 ```{python}
 #| echo: false
 import leafmap
-m = leafmap.Map(height=600, center=[39.4948, -108.5492], zoom=12)
-url = "https://github.com/opengeos/data/releases/download/raster/Libya-2023-07-01.tif"
-url2 = "https://github.com/opengeos/data/releases/download/raster/Libya-2023-09-13.tif"
-m.split_map(url, url2)
+m = leafmap.Map(height=500)
+m.split_map(left_layer="TERRAIN", right_layer="OpenTopoMap")
 m
 ```
