@@ -1,0 +1,47 @@
+---
+title: "Práctico de Amenazas (Encuesta)"
+---
+
+# Carácteristicas Generales {-}
+  
+1. **Lugar**: Isla Teja, Valdivia
+    
+2. **Grupo**: 1 (Javier Contreras, Joseba Iribarren, Cristian Soto y Alén Miranda)
+    
+# Planificación del Trabajo {-}
+
+## **¿Qué hay que hacer?**
+
+El objetivo del práctico fue planificar y realizar una encuesta acerca de una amenaza al medioambiente. Nuestro grupo decidió abordar como tema “Los gatos como amenaza a la avifauna de Chile”.
+
+## **¿Dónde?** {-}
+
+En honor al tiempo, la encuesta únicamente se debía realizar en Isla Teja, Valdivia. En el caso de nuestra encuesta y, de forma personal, los lugares a encuestar fueron: Teja Norte (originalmente Teja Market, que por motivos de conveniencia se trasladó hacia el fundo) y Los Laureles.
+
+## **¿Quiénes?** {-}
+
+La encuesta la realizó todo el grupo. Sin embargo, para obtener una variedad de preguntas, nos separamos en dos subgrupos. El mío contaba con Cristian Soto y mi presencia.
+
+## **¿Cómo?** {-}
+
+Para ser eficientes, nuestro grupo realizó una encuesta en Google Forms, así, cada integrante podía realizar y registrar al instante las respuestas del encuestado.
+
+## **¿Por cuánto tiempo?** {-}
+
+Tuvimos el bloque de la tarde para planificar y realizar la entrevista, comenzando desde las 14:00 hasta aproximadamente las 17:30 hrs.
+
+## **Materiales** {-}
+
+Los materiales que ocupé fueron el consentimiento informado y 2 celulares (una para realizar la encuesta y otro para grabar).
+
+# Actividades realizadas {-}
+
+Inicialmente, escogimos el tema de nuestra encuesta (“Los gatos como amenaza a la avifauna de Chile”), discutiendo el cómo abordar esta temática a un público en general. Generamos una encuesta sencilla de 5 preguntas (entre las cuales había respuestas numéricas [E.g. número de gatos] o cualitativas [E.g. ¿Qué tan de acuerdo está con esta afirmación … siendo 1 “Muy en desacuerdo” y 5 “Muy de acuerdo”?]). Un momento que, personalmente encuentro anecdótico, es que en una de las preguntas se trataba acerca de soluciones adecuadas al problema de los gatos, teniendo como opción el control letal. Al ver esto, la profesora Milen nos llamó la atención, ya que, a pesar de que en el ambiente académico esta opción es aceptada (y por mi parte válida), la opinión popular podría no estar de acuerdo poniendo en riesgo nuestra salud, existiendo la posibilidad de agresión física debido a la sensibilidad del tema. Como se explicó en el punto 2.d. para ser eficientes, nuestra encuesta fue confeccionada y subida a un Forms de Google, para que cada integrante pudiera registrar las respuestas del encuestado con facilidad. Posterior a esto, realicé un consentimiento informado simple para dar a conocer a los encuestados el uso y grabación de sus respuestas. Para esto, obtuve ayuda de las ayudantes. Luego, hicimos una encuesta piloto con otro grupo (no recuerdo cuál) para ver la viabilidad de esta, resultando viable. Por último, nos separamos en dos subgrupo y realizamos la encuesta. Como mencioné en el punto 2.b. nuestro destino original era en las afueras de la tienda Teja Market. Sin embargo, producto de la poca afluencia de gente y el establecimiento de otros grupos, con Cristian decidimos rondar por el Fundo Teja Norte para obtener respuestas de otras personas. Finalmente, nos dirigimos a Los Laureles para obtener más respuestas.  
+Nuestros encuestados fueron bastante diversos, abarcando desde jóvenes de nuestra edad, a adultos mayores, incluyendo a un par de personas de distinta nacionalidad. 
+
+# Resultados y Comentarios {-}
+
+Entre los principales resultados encontramos que, a pesar de que un 68.8% de los encuestados encontraron a las aves nativas como muy importantes, solo un 31.3% estaba de acuerdo con reconocer a los gatos. Una de las respuestas que más me llamó la atención fue mencionar a los gatos no como culpables, sino como víctimas de la domesticación humana, citando reiteradas veces que su naturaleza es de “ser cazador” y que estos no tienen la culpa de nada.  
+De las soluciones más escogidas fue, la tenencia responsable del gato, disponiendo de un total de 6 votos (24%). En esta pregunta, me acuerdo de que un encuestado mencionó la posibilidad de inventar un dispositivo similar a un collar, que le avise a las aves cuando un gato se encuentre cerca, como sustituto a los collares con cascabeles para gatos.
+Por último, un 41.2% no estaba de acuerdo con la afirmación “Los gatos no deberían transitar sin supervisión, porque son una amenaza para la biodiversidad”, citando lo irreal y complejo de realizar esto.  
+Esta encuesta me hizo recalcar lo complejo que es tratar temas medioambientales hacia un público general, producto de lo difícil de compatibilizar objetivos en común, al igual que otros temas muy citados como el sector forestal o, más personalmente, el establecimiento de pesqueras en ciudades pequeñas (como Calbuco, mi lugar de procedencia). Sin embargo, esto solo me anima a seguir buscando rutas alternativas que logren conciliar estos problemas aparentemente disyuntivos y poder aunar estas “distintas” esferas.

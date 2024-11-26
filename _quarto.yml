@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  bread-crumbs: false
+  title: "Bitácora Práctica de Restauración de Ecosistemas"
+  navbar:
+    search: true
+    left:
+      - text: Prácticos
+        href: practicosIntro.qmd
+
+  sidebar: 
+    style: floating
+    search: true
+    contents: 
+      - text: "Prácticos"
+        href: practicosIntro.qmd
+        contents: 
+          - text: "13 de Agosto"
+            href: prac1_13-08-24.qmd
+            
+          - text: "20 de Agosto"
+            href: prueba.qmd
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
