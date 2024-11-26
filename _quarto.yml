@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: gh-pages
 
 website:
   bread-crumbs: false
@@ -19,16 +20,16 @@ website:
         contents: 
           - text: "13 de Agosto"
             href: prac1_13-08-24.qmd
-            
+
           - text: "20 de Agosto"
             href: prueba.qmd
-
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+
 
 
 
