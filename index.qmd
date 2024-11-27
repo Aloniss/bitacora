@@ -27,4 +27,62 @@ m = leafmap.Map(center=(40, -100), zoom=4)
 m
 ```
 
+```{python}
+#| echo: false
+#| warning: false
+
+import plotly
+import pandas as pd
+import matplotlib.pyplot as plt
+import plotly.express as px
+
+data = pd.read_csv("D:/Descargas/ndviMieda.csv")
+data = data.drop("Unnamed: 0", axis = 1)
+data['fecha'] = pd.to_datetime(data['fecha'])
+
+fig = px.scatter(data,
+                 x="fecha",
+                 y="media",
+                 error_y="sd",
+                 color_discrete_sequence=["#6ec474"],
+                 hover_data={'fecha': False},  # Ocultar la fecha original
+                 labels={
+                     'fecha': 'Fecha',  # Cambiar etiqueta de fecha
+                     'media': 'Media',  # Cambiar etiqueta de media
+                     'sd': 'Desviación Estándar'  # Cambiar etiqueta de sd si es necesario
+                 })
+
+# Actualizar el hover template para formatear la fecha directamente
+fig.update_traces(hovertemplate='<b>Fecha</b>: %{x|%d-%m-%Y}<br><b>Media</b>: %{y}<br>')
+
+fig.add_shape(
+    type="rect",
+    xref="x",  # Referencia del eje X
+    yref="paper",  # Referencia del eje Y (en términos del gráfico)
+    x0="2022-03-30",  # Inicio del rectángulo en X
+    x1="2022-10-10",  # Fin del rectángulo en X
+    y0=0,  # Inicio en Y (0 es la parte inferior del gráfico)
+    y1=1,  # Fin en Y (1 es la parte superior del gráfico)
+    fillcolor="red",
+    opacity=0.3,  # Opacidad del rectángulo (30% sombreado)
+    line_width = 0  # Sin borde en el rectángulo
+)
+
+fig.update_layout(
+    title={'text': "NDVI Promedio Fundo CEFOR",
+            'y':1,  # Posición vertical del título
+            'x':0.5,  # Centrar el título
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': dict(family="Roboto", size=24, color="black")},  # Fuente personalizada para el título
+    xaxis_title={"text": "Fecha",
+                 "font": dict(family = "Roboto")},  # Título del eje X
+    yaxis_title={"text" : "Media NDVI ± SD",
+                 "font": dict(family = "Roboto")},        
+    xaxis=dict(
+        tickformat="%Y")
+)
+# Mostrar el gráfico
+fig.show()
+```
 
