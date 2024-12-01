@@ -1,0 +1,306 @@
+---
+title: "Acción (fallida) de restauración CEFOR"
+---
+
+# Carácteristicas Generales {-}
+  
+1. **Lugar**:  Arboretum, Valdivia.
+
+2. **Fecha**: 20 de Agosto de 2024
+
+# Resumen {-}
+
+Se fue a visitar una acción de restauración realizada por el Centro de Información de Recursos Naturales (*CIREN*), apoyada por la Corporación Nacional Forestal (*CONAF*) y comandada por Giorgio Jackson (de CONAF) Pamela y Rany.
+
+# Descripción de Actividad {-}
+
+Se fue visitar presencialmente el fundo del CEFOR dentro del Arboretum. Dentro de este se realizó una fallida acción de restauración, un recambio de especies vegetales, pasando principalmente de aromo (*Acacia melanoxylon*) a tres especies nativas Coihue (*Nothofagus dombeyi*), Roble (*Nothofagus obliqua*) y en menor medida Ulmo (*Eucryphia cordifolia*), en aproximadamente en 3 hectáreas. Esto se enmarca dentro de los planes de reactivación económica (2021) y posteriormente en Siembra por Chile (2022) (@fig-02-01). Estos planes tenían como principal foco la reactivación económica rural. A grandes rasgos, CONAF proporciona recursos (tales como dinero, empleos, materiales) para incentivar a los propiertarios a cambiar especies vegetales exóticas (principalmente aromo y eucalipto) a especies nativas. Con esto se ayuda al sector rural para volverlos activos económicamente a la vez que se cumple con los compromisos internacionales adquiridos por Chile para hacer frente al cambio climático (reforestando bosque nativo). Este plan nace desde el Ministerio de Agricultura, que tiene como principal objetivo la reactivación económica, impulsar la agricultura familiar y reforzar la seguridad alimentaria. Dentro de este, un objetivo es la Restauración de Bosque Nativo, junto con la Reactivación de Empleo [^1].
+
+[^1]: Información extraída desde la página del Ministerio de Agricultura, disponible en el siguiente [enlace](https://minagri.gob.cl/siembra-por-chile-2024/).
+
+![Línea de tiempo ](recursos/p2/timeline.png){#fig-02-01}
+
+En general, CONAF llega a un mutuo acuerdo entre empresa-propietario para realizar la reconversión de especies.
+
+Sin embargo, esto va atado a ciertos problemas:
+
+1. Poco compromiso local: Para que estas acciones lleguen a ser planes de restauración se debe mantener el bosque nativo plantado durante el tiempo, por lo que, si al propietario no le interesa seguir con el plan, CONAF se retirará y lo invertido se perderá.
+
+2. Desinformación: Giorgio nos comentaba que algunos propietarios pensaban que a través de este plan, CONAF expropiaba terrenos privados. Nada más lejos de la realidad, ya que la Corporación se limitaba a incentivar la plantaciones de especies nativas y entrega de recursos.
+
+3. Desinterés o desconocimiento: Se comentó tambien que varios propietarios no le interesaba realizar la reconversión por muchos motivos. Uno de estos era mantener bosques forestales productivos para la descendencia del propietario. De hecho, algunas personas encontraban que especies que pueden fomentar la sucesión ecológica, como el maqui (*Aristotelia chilensis*) o el radal (*Lomatia hirsuta*) eran consideradas especies de poco valor (económico).
+
+Teniendo esto en cuenta, CONAF, junto con CIREN, realizaron una acción de conservación dentro del Arboretum. Este consistia en la cortar aromo (*Acacia melanoxylon*) y reemplazarlo por especies nativas (Coihue, Roble y Ulmo). No se menciona a detalle el periodo de corta ni la forma de ejecución de esta pero se presume que el plan se ejecutó durante el año 2022 a través de corta mecánica y quema (@fig-timelapse, @fig-ndviSavi y @fig-mapa). Se hicieron dos métodos de siembra, por núcleo e hileras, como se muestra en la @fig-mapa.
+
+Lamentablemente, CIREN no realizó ninguna acción posterior a la corta para mantener a raya al aromo. Esto sumando al agresivo rebrote propia de la especie provocó que el predio se llenara de individuos de esta especie en relativamente poco tiempo (uno a dos años). Es por esto que se hace énfasis en el compromiso local.
+
+# Resultados y Comentarios {-}
+
+Inicialmente se nos entregó un mapa georreferenciado del predio formato `.pdf`. Este, junto con los núcleos visitados se encuentran a continuación:
+
+:::{.column-body-outset}
+::: {#fig-mapa}
+```{python}
+#| echo: false
+#| warning: false
+#| fig-align: center
+
+import geopandas as gpd
+import fiona as fn
+import os
+os.chdir("D:/OneDrive/OneDrive - Universidad Austral de Chile/Universidad/8vo Semestre/practicaRestauracion/bitaquarto/recursos/p2/")
+fundo = gpd.read_file("fundoNucleos.gpkg",
+                     layer = "fundo")
+nucleos = gpd.read_file("fundoNucleos.gpkg",
+                     layer = "nucleos")
+
+nucleos.at[7, "imagenes"] = "https://i.imgur.com/T2MaVNU.jpeg"
+nucleos.at[7, "descrip"] = "Individuo de Roble seco."
+
+nucleos.at[9, "imagenes"] = "https://i.imgur.com/2T7dfyh.jpeg"
+nucleos.at[9, "descrip"] = "Rebrote de tocón de aromo."
+
+nucleos.at[12, "imagenes"] = "https://i.imgur.com/KmliPZQ.jpeg"
+nucleos.at[12, "descrip"] = "Descomposición Parda junto con restos de carbón vegetal."
+
+nucleos.at[4, "imagenes"] = "https://i.imgur.com/SmcZv63.jpeg"
+nucleos.at[4, "descrip"] = "Copihue en individuos de aromo."
+
+from ipyleaflet import Map, Marker, CircleMarker, Popup, TileLayer, GeoJSON
+from ipywidgets import HTML
+import geopandas as gpd
+import pandas as pd
+
+# Convertir los datos a EPSG:4326 si no están ya en esa proyección
+fundo = fundo.to_crs(epsg=4326)
+repro = nucleos.to_crs(epsg=4326)
+
+# Crear el mapa base
+m = Map(center=[repro.iloc[17].geometry.y, nucleos.iloc[17].geometry.x], 
+        zoom=18,
+       scroll_wheel_zoom = True)  
+
+# Agregar la capa de Google Satellite
+google_tile = TileLayer(
+    url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+    name="Google Satellite",
+    attribution="Google"
+)
+m.add_layer(google_tile)
+
+# Agregar la capa GeoJSON del fundo
+geojson_layer = GeoJSON(
+    data=fundo.__geo_interface__,
+    style={"color": "red", "weight": 2, "opacity": 1.0},
+    name="Fundo CEFOR"
+)
+m.add_layer(geojson_layer)
+
+# Ajustar el zoom para que incluya la geometría de `fundo`
+bounds = fundo.total_bounds  # [minx, miny, maxx, maxy]
+m.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
+
+# Agregar marcadores
+for _, row in repro.iterrows():
+    location = (row.geometry.y, row.geometry.x)
+    
+    if not pd.isna(row["imagenes"]):  # Si hay una imagen asociada
+        marker = CircleMarker(
+            location=location,
+            radius=5,
+            color="red",
+            fill_color="red",
+            fill_opacity=0.6
+        )
+        
+        # Crear el contenido del popup
+        mensaje = HTML()
+        mensaje.value = f'''
+        <div style="width: 300px;">
+            <strong>Nombre:</strong> {row["nombre"]} <br>
+            <img src="{row["imagenes"]}" alt="Image" style="width: 100%; height: auto;"> <br>
+            {row["descrip"]}
+        </div>
+        '''
+        popup = Popup(location=location, child=mensaje, max_width=300)
+        marker.popup = popup
+        
+    else:  # Si no hay una imagen asociada
+        marker = CircleMarker(
+            location=location,
+            radius=5,
+            color="blue",
+            fill_color="blue",
+            fill_opacity=0.6
+        )
+        
+        mensaje = HTML()
+        mensaje.value = f'''
+        <div style="width: 300px;">
+            <strong>Nombre:</strong> {row["nombre"]} <br>
+        </div>
+        '''
+        popup = Popup(location=location, child=mensaje)
+        marker.popup = popup
+    
+    m.add_layer(marker)
+
+m.layout.height = "790px"  # Puedes cambiar el valor según tus necesidades
+m.layout.width = "99%"  # Se ajusta al 100% del ancho disponible
+# Mostrar el mapa
+m
+```
+Mapa con los núcleos visitados (**Puntos Rojos**) y el restante de núcleos (**Puntos Azules**). Dentro de este se reconocieron varios elementos.
+:::
+:::
+
+Respecto a la corta efectuada se pudo ver, gracias a *Google Earth* que esta fue efectuada durante 2022 y que, debido al rebrote de aromo, rápidamente se vuelve a tener una cobertura vegetal. Aquí hay un pequeño *timelapse*:
+
+::: {#fig-timelapse}
+{{< video  recursos/p2/timelapse2.mp4 >}}
+
+*Timelapse* del Fundo del CEFOR en Arboretum. Podemos ver que la corta comienza a evidenciarse a inicios de 2022 y una cobertura vegetal completa en 2024.
+:::
+
+Esto se puede evidenciar con valores promedio de NDVI y SAVI para el fundo. Se puede ver, iniciando 2022, los valores de ambos índices bajan bajan, comenzando a estabilizarse a inicios del 2024, como se observa en la @fig-ndviSavi.
+
+:::{.column-page}
+::: {#fig-ndviSavi}
+<div style="text-align: center;">
+
+```{python}
+#| echo: false
+#| warning: false
+#| fig-align: center
+
+import plotly.graph_objects as go
+import pandas as pd
+from plotly.subplots import make_subplots
+
+data2 = pd.read_csv("D:/Descargas/ndvi_savi_GAM.csv")
+
+trace1 = go.Scatter(
+    x=data2['fecha'],
+    y=data2["media"],
+    mode="markers",
+    name="NDVI",
+    showlegend=True,
+    marker=dict(color="#138808"),
+    hovertemplate=(
+        "Índice: NDVI<br>"
+        "Fecha: %{x|%d-%b-%Y}<br>"
+        "Media: %{y:.3f} ± %{customdata[0]:.3f}<extra></extra>"
+    ),
+    customdata=data2[['sd']].values
+)
+
+trace2 = go.Scatter(
+    x=data2['fecha'],
+    y=data2['SAVI_mean'],
+    mode="markers",
+    name="SAVI",
+    showlegend=True,
+    marker=dict(color="#A46422"),
+    hovertemplate=(
+        "Índice: SAVI<br>" 
+        "Fecha: %{x|%d-%b-%Y}<br>"
+        "Media: %{y:.3f} ± %{customdata[0]:.3f}<extra></extra>"
+    ),
+    customdata=data2[['SAVI_stdDev']].values
+)
+
+trace3 = go.Scatter(
+    x=data2['fecha'],
+    y=data2['media_gam'],
+    mode="lines",
+    hoverinfo="none",
+    showlegend=False,
+    marker=dict(color="#89c383")
+)
+
+trace4 = go.Scatter(
+    x=data2['fecha'],
+    y=data2['savi_gam'],
+    mode="lines",
+    name="savi_gam",
+    hoverinfo="none",
+    showlegend=False,
+    marker=dict(color="#d1b190")
+)
+
+fig = make_subplots(specs=[[{"secondary_y": True}]])
+fig.add_trace(trace1)
+fig.add_trace(trace2, secondary_y=False)
+fig.add_trace(trace3, secondary_y=False)
+fig.add_trace(trace4, secondary_y=False)
+
+fig.add_shape(
+    type="rect",
+    x0="2022-01-01",
+    x1="2022-12-31",
+    y0=0,
+    y1=1,
+    xref="x",
+    yref="paper",
+    fillcolor="red",
+    opacity=0.2,
+    line_width=0
+)
+
+fig['layout'].update(
+    title={
+        'text': "NDVI y SAVI Promedio Fundo CEFOR",
+        'y': 0.95,
+        'x': 0.5,
+        'xanchor': 'center',
+        'yanchor': 'top',
+        'font': dict(family="Roboto", size=24, color="black")
+    },
+    xaxis_title={"text": "Fecha", "font": dict(family="Roboto")},
+    yaxis_title={"text": "Índices", "font": dict(family="Roboto")},
+    xaxis=dict(tickformat='%b %Y'),
+    width=1300,
+    height=600,
+    margin=dict(r=0, t=70, b=50),
+    legend=dict(
+        orientation="h",  # Horizontal
+        yanchor="bottom",
+        y=-0.2,  # Ajustar la posición vertical de la leyenda
+        xanchor="center",
+        x=0.5
+    )
+)
+
+fig.show()
+```
+</div>
+
+NDVI y SAVI promedio en el fundo del CEFOR.
+:::
+:::
+
+Se ocupó el NDVI ya que puede detectar la vitalidad de las plantas. Al haber corta, no hay plantas y por ende no habría vitalidad. Sin embargo, debido al efecto que podría tener el suelo descubierto se empleó el SAVI, ya que su ajuste al efecto del suelo lo hace más confiable en estas condiciones. Se pudó observar tambien, un comportamiento cíclico dentro del SAVI, al cual atribuyo al comportamiento estacional de *A. melanoxylon*, remarcado a principios del 2024.
+
+En los núcleos 8 y 10 (@fig-mapa) se constató la dominancia del aromo, favorecida por su rebrote a partir de tocones. En contraste, se observó que los ejemplares de *N. obliqua* presentaban un estado lamentable, con muchos individuos secos, suprimidos o caídos en el suelo. La explicación más plausible es que las especies nativas no lograron competir por los recursos frente al aromo. Un posible indicio de ello fue el gran desarrollo del sistema radical, expuesto por la remoción mecánica de uno de sus individuos:
+
+![Desarrollo radical de un individuo de Aromo.](recursos/p2/radical.jpg){#fig-radical}
+
+Por otro lado, a través de las observaciones de terreno, debido a la presencia de tocones se evidencia que la principal forma de limpieza del sector fue a través de corta, posiblemente corta con motosierra. Sin embargo, en el núcleo 13 (@fig-mapa) se encontraron troncos con restos carbonizados, lo que podría sugerir que también se ocupó quema para la limpieza. Más adelante, en las clases teóricas, aprenderíamos que este método, aunque puede parecer riesgoso, puede ser útil con fines de restauración. No obstante, esto no se mencionó en ningún momento y puede que pertenezca a alguna quema anterior.
+
+![Restos de carbon, junto con descomposición parda.](recursos/p2/carbonVegetal.jpg){#fig-carbon}
+
+En el predio se observaron numerosos rebrotes de aromo, especialmente en tocones, lo que evidencia el escaso compromiso de CIREN con esta acción de conservación. Además, se nos informó que ganado bovino ingresaba al predio (lo que se pudo constatar por la presencia de fecas, tanto secas como frescas), y posiblemente estos animales consumieron individuos de especies nativas. Esto, sumado al rebrote de aromo, demuestra que no es suficiente realizar una acción puntual en un sector, ya sea una corta o plantación. Sin un seguimiento y monitoreo adecuado, la restauración no será efectiva. En este contexto, el compromiso público-civil es fundamental. Como se nos explicó en clase, contar con el apoyo de las comunidades locales es imperativo para lograr el éxito en estos esfuerzos.
+
+# Foto del día {-}
+
+![](recursos/p2/copiwe.jpg)
+
+
+
+
+
+
+
+
+
+

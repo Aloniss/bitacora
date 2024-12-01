@@ -17,15 +17,38 @@ website:
     contents: 
       - text: "Prácticos"
         href: practicosIntro.qmd
+
         contents: 
           - text: "13 de Agosto"
             href: prac1_13-08-24.qmd
 
           - text: "20 de Agosto"
-            href: prueba.qmd
+            href: prac2_20-08-24.qmd
+
+          - text: "27 de Agosto"
+            href: prac3_27-08-24.qmd
+          
+          - text: "03 de Septiembre"
+            href:
+
+          - text: "24 de Septiembre"
+            href:
+
+          - text: "15 de Octubre"
+            href:
+
+          - text: "22 de Octubre"
+            href:
+
+          - text: "29 de Octubre"
+            href:
+
+          - text: "19 de Noviembre"
+            href:
 
 format:
   html:
+    lang: es
     theme: cosmo
     css: styles.css
     toc: true
