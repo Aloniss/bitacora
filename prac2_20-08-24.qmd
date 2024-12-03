@@ -18,7 +18,7 @@ Se fue visitar presencialmente el fundo del CEFOR dentro del Arboretum. Dentro d
 
 [^1]: Información extraída desde la página del Ministerio de Agricultura, disponible en el siguiente [enlace](https://minagri.gob.cl/siembra-por-chile-2024/).
 
-![Línea de tiempo ](recursos/p2/timeline.png){#fig-02-01}
+![Línea de tiempo.](recursos/p2/timeline.png){#fig-02-01}
 
 En general, CONAF llega a un mutuo acuerdo entre empresa-propietario para realizar la reconversión de especies.
 
