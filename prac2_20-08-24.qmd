@@ -10,7 +10,7 @@ title: "Acción (fallida) de restauración CEFOR"
 
 # Resumen {-}
 
-Se fue a visitar una acción de restauración realizada por el Centro de Información de Recursos Naturales (*CIREN*), apoyada por la Corporación Nacional Forestal (*CONAF*) y comandada por Giorgio Jackson (de CONAF) Pamela y Rany.
+Se fue a visitar una acción de restauración realizada por el Centro Experimental Forestal (*CEFOR*), apoyada por la Corporación Nacional Forestal (*CONAF*) y comandada por Giorgio Jackson (de CONAF) Pamela Acevedo y Rony Reyes.
 
 # Descripción de Actividad {-}
 
@@ -30,9 +30,9 @@ Sin embargo, esto va atado a ciertos problemas:
 
 3. Desinterés o desconocimiento: Se comentó tambien que varios propietarios no le interesaba realizar la reconversión por muchos motivos. Uno de estos era mantener bosques forestales productivos para la descendencia del propietario. De hecho, algunas personas encontraban que especies que pueden fomentar la sucesión ecológica, como el maqui (*Aristotelia chilensis*) o el radal (*Lomatia hirsuta*) eran consideradas especies de poco valor (económico).
 
-Teniendo esto en cuenta, CONAF, junto con CIREN, realizaron una acción de conservación dentro del Arboretum. Este consistia en la cortar aromo (*Acacia melanoxylon*) y reemplazarlo por especies nativas (Coihue, Roble y Ulmo). No se menciona a detalle el periodo de corta ni la forma de ejecución de esta pero se presume que el plan se ejecutó durante el año 2022 a través de corta mecánica y quema (@fig-timelapse, @fig-ndviSavi y @fig-mapa). Se hicieron dos métodos de siembra, por núcleo e hileras, como se muestra en la @fig-mapa.
+Teniendo esto en cuenta, CONAF, junto con CEFOR, realizaron una acción de conservación dentro del Arboretum. Este consistia en la cortar aromo (*Acacia melanoxylon*) y reemplazarlo por especies nativas (Coihue, Roble y Ulmo). No se menciona a detalle el periodo de corta ni la forma de ejecución de esta pero se presume que el plan se ejecutó durante el año 2022 a través de corta mecánica y quema (@fig-timelapse, @fig-ndviSavi y @fig-mapa). Se hicieron dos métodos de siembra, por núcleo e hileras, como se muestra en la @fig-mapa.
 
-Lamentablemente, CIREN no realizó ninguna acción posterior a la corta para mantener a raya al aromo. Esto sumando al agresivo rebrote propia de la especie provocó que el predio se llenara de individuos de esta especie en relativamente poco tiempo (uno a dos años). Es por esto que se hace énfasis en el compromiso local.
+Lamentablemente, CEFOR no realizó ninguna acción posterior a la corta para mantener a raya al aromo. Esto sumando al agresivo rebrote propia de la especie provocó que el predio se llenara de individuos de esta especie en relativamente poco tiempo (uno a dos años). Es por esto que se hace énfasis en el compromiso local.
 
 # Resultados y Comentarios {-}
 
@@ -150,7 +150,7 @@ m.layout.width = "99%"  # Se ajusta al 100% del ancho disponible
 # Mostrar el mapa
 m
 ```
-Mapa con los núcleos visitados (**Puntos Rojos**) y el restante de núcleos (**Puntos Azules**). Dentro de este se reconocieron varios elementos.
+Mapa interactivo con los núcleos visitados (**Puntos Rojos**) y el restante de núcleos (**Puntos Azules**). Dentro de este se reconocieron varios elementos.
 :::
 :::
 
@@ -289,7 +289,7 @@ Por otro lado, a través de las observaciones de terreno, debido a la presencia 
 
 ![Restos de carbon, junto con descomposición parda.](recursos/p2/carbonVegetal.jpg){#fig-carbon}
 
-En el predio se observaron numerosos rebrotes de aromo, especialmente en tocones, lo que evidencia el escaso compromiso de CIREN con esta acción de conservación. Además, se nos informó que ganado bovino ingresaba al predio (lo que se pudo constatar por la presencia de fecas, tanto secas como frescas), y posiblemente estos animales consumieron individuos de especies nativas. Esto, sumado al rebrote de aromo, demuestra que no es suficiente realizar una acción puntual en un sector, ya sea una corta o plantación. Sin un seguimiento y monitoreo adecuado, la restauración no será efectiva. En este contexto, el compromiso público-civil es fundamental. Como se nos explicó en clase, contar con el apoyo de las comunidades locales es imperativo para lograr el éxito en estos esfuerzos.
+En el predio se observaron numerosos rebrotes de aromo, especialmente en tocones, lo que evidencia el escaso compromiso de CEFOR con esta acción de conservación. Además, se nos informó que ganado bovino ingresaba al predio (lo que se pudo constatar por la presencia de fecas, tanto secas como frescas), y posiblemente estos animales consumieron individuos de especies nativas. Esto, sumado al rebrote de aromo, demuestra que no es suficiente realizar una acción puntual en un sector, ya sea una corta o plantación. Sin un seguimiento y monitoreo adecuado, la restauración no será efectiva. En este contexto, el compromiso público-civil es fundamental. Como se nos explicó en clase, contar con el apoyo de las comunidades locales es imperativo para lograr el éxito en estos esfuerzos.
 
 # Foto del día {-}
 

@@ -1,0 +1,12 @@
+---
+title: "Metodología"
+sidebar: false
+---
+
+Mencionar transparencia
+
+Grafo con ciclo o linea, pero contempla:
+
+Dato en terreno, celular -> Paso a computador -> Quarto para la web --> Sub: Plotly, R, leafmap para interactivilidad -> escritura --> gpt para redacción.
+
+Mostrar que se puede hacer más con la tecnología con las suficientes ganas. Que lo digital no tiene porque ser fome.

@@ -1,3 +1,91 @@
 ---
-title: "Visita Vivéro *Bosques del Sur*"
+title: "Visita Vivero *Bosques del Sur*"
 ---
+
+# Características Generales {-}
+
+1. **Lugar**: Vivero Bosque Sur  
+
+2. **Fecha**: 24 de Agosto de 2024
+
+# Resumen {-}
+
+Se realizó una visita al Vivero Bosque Sur, con el objetivo de ver la propagación de especies nativas para fines de conservación. La actividad estuvo enfocada en conocer los procesos de producción, las especies involucradas y las técnicas de manejo utilizadas en el vivero. 
+
+# Descripción de Actividad {-}
+
+Se nos llevó a conocer el vivero *Bosques del Sur*, un vivero originado por la nuestra facultad, impulsado por la sra. Martiza con el fin de propagar especies nativas ade alta calidad. El objetivo de este vivero es de proveer información para la investigación como también para apoyar labores de restauración ecológica.
+
+![Fotografía de un sector del vivero. Extraída del siguiente [enlace](https://www.forestal.uach.cl/predios/vivero-bosques-del-sur.php).](recursos/p3/vivero.jpg){#fig-vivero}
+
+Históricamente se han producio coihue (*Nothofagus dombeyi*), raulí (*Nothofagus alpina*), roble (*Nothofagus obliqua*) y ulmo (*Eucryphia cordifolia*) ya que son especies con crecimiento relativamente rápido. Sin embargo, actualmente se busca incluir especies de lento crecimiento junto con herbáceas, lo que ha generado desafíos relacionados con la falta de información sobre su propagación.
+
+::: {#fig-plantacion layout-ncol=2}
+
+![Individuos de *Nothofagus dombeyi*. Se aprecian aproximádamente cien mil coihues.](recursos/p3/plantacion1.jpg){#fig-plantacion1}
+
+![Vistazo a maceteros de plumavit con individuos de coihue. Caben 84 indivuduos por gaveta.](recursos/p3/plantacion2.jpg){#fig-plantacion2}
+
+Plantanciones de Coihue (*Nothofagus dombeyi*) en el vivero.
+:::
+
+Se nos mostró la técnica para cada individuo. Primero cada individuo se deja en un macetero de plumavit con tratamiento químico, para que las raíces no logren penetrarlo. Su sutrato incluye mulch o musgo, seleccionado por su capacidad de retener agua. Después, conforme crece la planta, se realiza una poda apical, para que no siga creciento. 
+
+El proceso de endurecimiento de las plantas conlleva tres fases: 
+
+1. **Establecimiento**: La raíz coloniza el sustrato y se desarrollan las primeras hojas verdaderas.  
+
+2. **Crecimiento pleno**: Se promueve el crecimiento vegetativo mediante fertilización con nitrógeno. 
+
+3. **Endurecimiento**: Se someten a estrés para mejorar su resistencia, reduciendo hojas para minimizar la humedad y el riesgo de hongos, como se aprecia en la @fig-plantacion.
+
+::: {#fig-fases layout-ncol=2}
+
+![Individuo de Coihue en fase de endurecimiento.](recursos/p3/individuo2.jpg){#fig-sostener}
+
+
+
+![Sustraro de un individuo. Se pueden notar pequeñas "bolitas". Estas son capsulas de NPK (Nitrógeno, Fósforo y Potasio).](recursos/p3/npk.jpg){#fig-npk}
+
+
+
+![Individuos en fase de establecimiento.](recursos/p3/establecimiento.jpg){#fig-establecimiento}
+
+
+
+![Individuos de Ulmo en fase de crecimiento pleno. Se puede notar una capa de musgo que provee al individuo de agua y protección.](recursos/p3/crecimiento.jpg){#fig-crecimientopleno}
+
+Distintas fases dentro del vivero.
+:::
+
+
+El vivero obtiene financiamiento mediante la venta de plantas, principalmente a privados, paisajistas y programas de compensación. Se mencionó además que este se logra autosustentar, lo que se refleja en:
+
+1. **Semillas**: la obtención de semillas se hace dentro de un parche de bosque presente en el mismo lugar, asegurándose de tener un buen _pool_ genético.
+
+2. **Ventas**: A través de las ventas logran pagar a l\@s trabajadores que tratan y cuidan las plántulas. Sin embargo, se mencionó que no están al máximo de su capacidad, lo que puede limitar la cantidad de ejemplares producidos.
+
+Sin embargo la producción para la venta no es lo único que se hace en el vivero. Como ya se mencionó, también hay espacio para la investigación. En este caso, nos llevaron a un invernadero que tenía imlpementado luces LED, sensores de temperatura y líneas de riego automatizadas. En particular, las luces usaban únicamente luces rojas y azules y se experimentaba con el fotoperiódo del ulmo. 
+
+![Individuos de Ulmo. En rojo los focos LED. La línea azul representa la separación entre especímenes. Los que se encuentran más cerca son plántulas mas pequeñas, mientras que las lejanas se encuentran más desarrolladas producto de la experimentación del fotoperiódo.](recursos/p3/SEGMENTADO2.png){#fig-led}
+
+También se mencionó que este viero se apoyaba con el [Vivero Municipal](prac4_03-09-24.qmd).
+
+# Resultados y Comentarios {-}
+
+Gracias a esta visita, fue posible comprender en profundidad el proceso de producción de especies nativas en el vivero. No es una tarea sencilla, ya que se deben considerar la resistencia de los individuos a distintos tipos de estrés y mantener un *pool* genético diverso para enfrentar posibles plagas de hongos. Este proceso requiere tiempo, y los trabajadores del vivero han logrado adaptarlo a las temporadas anuales de manera eficiente.
+
+Relacionado con este punto, la producción se ha concentrado principalmente en especies de la familia *Nothofagaceae*, debido a la tasa de crecimiento de las especies observadas. Aunque esto no es negativo, en el contexto de restauración de ecosistemas degradados sería recomendable priorizar especies pioneras que preparen el terreno para aquellas más especializadas, siguiendo el proceso de sucesión ecológica. Por lo tanto, sería ideal que los viveros comenzaran a propagar una mayor variedad de especies pioneras, ya sean arbóreas, herbáceas, musgos o hepáticas. Lo positivo es que el vivero está consciente de esta necesidad y se plantea incorporar este tipo de especies en el futuro, lo que resulta poco común en viveros de la misma región y aún más en otras zonas del país. De hecho, discutí esta idea con un compañero forestal, y analizamos qué tratamientos podríamos aplicar en áreas altamente intervenidas, priorizando enfoques ecológicos y silviculturales.
+
+Este tema también está vinculado a la regionalización de los viveros. Es lógico que un vivero en una región específica propague especies que puedan desarrollarse en ese entorno. Sin embargo, es fundamental considerar los ecosistemas en los que se plantarán esas especies. Como se mencionó en clases, una especie (aunque tenga “pasaporte chileno”) no será necesariamente nativa en todas las regiones del país. Por ello, es responsabilidad tanto de los profesionales como de las instituciones ambientales evaluar cuidadosamente la procedencia, el destino y el desarrollo de los ecosistemas a restaurar. Además, es imprescindible realizar un monitoreo y seguimiento adecuados para asegurar el éxito de estas acciones de restauración.
+
+Por último, estos viveros, además de propagar miles de ejemplares, también funcionan como refugio para especies amenazadas. Un ejemplo notable es un individuo de toromiro (*Sophora toromiro*) que se observó en el vivero, especie que está extinta en su hábitat natural. Aunque no se discutió específicamente este tema, el vivero podría, en el futuro, convertirse en un centro de propagación del toromiro, con el objetivo de reintroducirlo en su ambiente natural. No obstante, desconozco si esto sería factible.
+
+![Hojas de *Sophora toromiro*, encontrado a las afueras del invernadero.](recursos/p3/toromiro.jpg){#fig-toromiro}
+
+# Foto del día
+
+![Hepática encontrada en el sustrato de los individuos propagados.](recursos/p3/hepatica.jpg)
+
+
+

@@ -3,29 +3,13 @@ title: "Bienvenida"
 sidebar: false
 ---
 
-Hola a todas las personas que están acá. Les doy una fakin bienvenida a mi bitácora.
+Hola a todas las personas que están acá. Les doy una bienvenida a mi bitácora.
 
-Se han ocupado herramientas flipantes tales como:
+Se visitaron 3 viveros, 1 accion de restauración, 2 comunidades.
 
--   *Quarto*: para la producción de la página web.
+Se inentó ser sintactico, ya que no debe ser excesivo de leer.
 
--   *Python*: para la cartografía.
-
--   *El puto ChatGPT*: para la redacción de esta puta mierda.
-
--   *Whisper*: De los weones del ChatGPT, para transcripción
-
-Espero les fakin guste, putos todos.
-
-Mapa porque si.
-
-```{python}
-#| echo: false
-
-import leafmap
-m = leafmap.Map(center=(40, -100), zoom=4)
-m
-```
+Se optó el método online por la factibilidad de compartir apuntes, imagénes, gráficos e interactibilidad.
 
 
 

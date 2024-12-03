@@ -68,22 +68,41 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 <script type="text/javascript">
+
 window.PlotlyConfig = {MathJaxConfig: 'local'};
+
 if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+
 if (typeof require !== 'undefined') {
+
 require.undef("plotly");
+
 requirejs.config({
+
     paths: {
+
         'plotly': ['https://cdn.plot.ly/plotly-2.35.2.min']
+
     }
+
 });
+
 require(['plotly'], function(Plotly) {
+
     window._Plotly = Plotly;
+
 });
+
 }
+
 </script>
+
+
 
 
 
@@ -110,6 +129,16 @@ require(['plotly'], function(Plotly) {
   <li class="nav-item">
     <a class="nav-link active" href="./practicosIntro.html" aria-current="page"> 
 <span class="menu-text">Prácticos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./meto.html"> 
+<span class="menu-text">Metodología</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./agra.html"> 
+<span class="menu-text">Agradecimientos</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -170,23 +199,41 @@ require(['plotly'], function(Plotly) {
   </div>
 </li>
           <li class="sidebar-item">
- <span class="menu-text">03 de Septiembre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac4_03-09-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03 de Septiembre</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">24 de Septiembre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac5_24-09-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">24 de Septiembre</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">15 de Octubre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac6_15-10-21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">15 de Octubre</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">22 de Octubre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac7_22-10-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">22 de Octubre</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">29 de Octubre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac8_29-10-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">29 de Octubre</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
- <span class="menu-text">19 de Noviembre</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./prac9_19-11-24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">19 de Noviembre</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>

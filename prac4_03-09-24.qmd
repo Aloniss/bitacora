@@ -1,0 +1,61 @@
+---
+title: "Visita Vivero Municipal"
+---
+
+# Características Generales {-}
+
+1. **Lugar**: Vivero Municipal Núcleo Nativo, Valdivia.  
+
+2. **Fecha**: 03 de Septiembre de 2024  
+
+# Resumen {-}
+
+Se visitó el Vivero Municipal de Valdivia, el cual ha logrado establecer distintos puntos verdes nativo dentro de la ciudad.
+
+# Descripción de Actividad  {-}
+
+Se visitó el vivero municipal a cargo de Cindy Farías, donde destaca un núcleo de especies nativas. Este vivero ha logrado reunir aproximadamente 40 especies autóctonas para distintos proyectos urbanos.
+
+Históricamente, los municipios han gestionado viveros siguiendo la lógica de los jardines franceses, enfocados en generar plantas ornamentales para embellecer la ciudad. Esta estrategia incluye el corte de césped, el mantenimiento de herbáceas y la plantación estacional de especies decorativas, lo que implica un alto costo en términos de espacio, recursos hídricos y dinero. Además, este enfoque no cumple con los requisitos de los tratados internacionales suscritos por Chile para combatir el cambio climático, debido a su baja diversidad biológica.
+
+Sin embargo, se ha producido un cambio de paradigma en la gestión del ornato urbano y la protección de ecosistemas, especialmente a partir del incidente de Celco y el Santuario de la Naturaleza del Río Cruces en 2004. Como resultado, este vivero se convirtió en el primero de carácter municipal con predominancia de especies nativas. A diferencia de otros, no tiene fines educativos ni se dedica al cultivo de huertos, sino que se centra en la producción de plantas para la ciudad. Esto refleja el interés creciente en la creación de infraestructura verde, promoviendo la conexión entre espacios naturales dentro de las ciudades, restaurando la conectividad ambiental y fomentando un enfoque interdisciplinario y transdisciplinario en su gestión.
+
+La metodología para la obtención de plantas se basa en la observación de la naturaleza. Los integrantes del vivero realizaron recorridos por el bosque para comprender su dinámica, identificando plantas pioneras, especies propias de ecotonos y aquellas que crecen en distintos niveles de profundidad. Esta exploración permitió desarrollar una base técnica sólida para la propagación de especies nativas.
+
+El proyecto comenzó con una intervención "subversiva" en el Paseo Libertad. Aunque inicialmente recibió críticas, con el tiempo se demostró su efectividad, ya que las plantas florecieron y atrajeron polinizadores. Hoy, el proyecto cuenta con el respaldo del municipio y ha establecido 45 núcleos nativos, diseñados y mantenidos en colaboración con la comunidad.
+
+El vivero también cuenta con un jardín madre, que alberga una gran diversidad de especies. Además, ha experimentado con distintos núcleos que simulan diversos tipos de ecosistemas, contribuyendo a la restauración ecológica y la biodiversidad urbana.
+
+# Resultados y Comentarios {-}
+
+Dentro del vivero se pudieron observar distintos tipos de núcleos:
+
+::: {#fig-nucleos layout-ncol=2}
+
+![Se pueden observar tres distintos núcleos, cada uno de ello con distintas especies.](recursos/p4/nucelo1.jpg){#fig-nucleo}
+
+![En este caso hay un núcleo simulando humedal.](recursos/p4/humedal.jpg){#fig-humedal}
+
+![Núcleo simulando el borde de un humedal.](recursos/p4/borde.jpg){#fig-borde}
+
+![Núcleo con distintos estratos. Se puede observar *Lophosoria quadripinnata*, *Blechnum chilense*, *Escallonia rubra*, *Mitraria coccinea*, *Fuchsia magellanica* y *Luma apiculata*.](recursos/p4/estratos.jpg){#fig-estrato}
+
+
+Núcleos dentro del vivero municipal.
+:::
+
+Esto no solo demuestra un profundo conocimiento de los diversos microsistemas presentes en las ciudades, sino también un gran compromiso con el vivero. El esfuerzo y la dedicación de las personas involucradas han resultado en núcleos efectivos y duraderos. Un ejemplo notable es la intervención en el Paseo Libertad, que continúa vigente y en condiciones iguales o incluso mejores.
+
+Además, este espacio contribuye a reducir la barrera entre el bosque y la ciudad, integrando fragmentos de bosque que proporcionan múltiples beneficios. Estos fragmentos no solo enriquecen el entorno urbano, sino que también sirven como refugio para especies nativas poco comunes en áreas urbanas.
+
+::: {layout-ncol=2}
+
+![Distintas especies propagadas. Más al fondo se puede ver parte de una población urbana.](recursos/p4/CIUDAD.jpg){#fig-ciudad}
+
+![Individuo de calafate presente en el vivero.](recursos/p4/calafate.jpg){#fig-calafate}
+
+:::
+
+# Foto del día {-}
+
+![](recursos/p4/delDia.jpeg)

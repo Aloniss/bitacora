@@ -1,0 +1,199 @@
+---
+title: "Terreno Humedal Cabo Blanco - Santa Rosa"
+---
+
+# Características Generales {-}
+
+1. **Lugar**: Humedal Cabo Blanco - Santa Rosa, Valdivia.
+
+2. **Grupo**: CAP (Venus Salvadores, Cristian Soto, Priscila Paredes y yo).
+
+2. **Fecha**: 24 de Septiembre de 2024  
+
+# Resumen {-}
+
+Se realizó una visita al Humedal Cabo Blanco - Santa Rosa en donde, a través de distintas estaciones, pudimos caracterizar estaciones de sucesión ecológica.
+
+# Descripción de Actividad  {-}
+
+Se nos llevó al humedal Cabo Blanco, a las afueras de Centro de Humedales Río Cruces. Este nace de un estero desde las Ánimas, recorre Valdivia, y desemboca en el Rio Cruces. Según el Sitema de Información y Monitoreo de Biodiversidad (SIMBIO) este humedal se llama Humedal Estero Santa Rosa - Sector Aerodromo, caracterizado principalmente por ser un humedal palustre emergente y permanente, teniendo apróximadamente 110.2 hectáreas [^1].
+
+[^1]: Página de [SIMBIO](https://simbio.mma.gob.cl/Humedales/InventarioDetails/47#limites) y del [Geoportal de Humedales Continentales](https://arcgis.mma.gob.cl/portal/apps/webappviewer/index.html?id=6a79f6b535154991895f2bb2204b83bb&extent=-8007706.1083%2C-4019000.5424%2C-7934326.5611%2C-3982884.0466%2C102100).
+
+Al llegar al sitio, se nos proporcionó vestimenta adecuada para trabajar en ambientes acuáticos, ya que el lugar presentaba charcos y zonas con agua de mediana profundidad. Bajo la supervisión de Inao Vásquez, se nos asignó el muestreo de cinco estaciones diferentes. El objetivo era analizar las condiciones del lugar, identificar posibles disturbios ecosistémicos, determinar el tipo de sucesión presente, buscar indicadores y ordenar las estaciones según su etapa sucesional (de más temprana a más avanzada).
+
+Una vez establecidos en una estación, debíamos establecer dos áreas, una con cubierta por dosél y otra abierta, y en cada uno  debíamos medir un área de 2 mt^2^ para realizar las siguientes mediciones:
+
+1. Planta nodriza (si es que hay).
+
+2. Regeneración arbórea.
+
+3. Identificación de especies. 
+
+Los datos se registraron en la aplicación móvil *AppSheet*, una herramienta de *Google* para recopilación de datos. Sin embargo, al momento de redactar este práctico, la página de la aplicación no estaba disponible. Por esta razón, se trabajará con parte de sus resultados, que también serán insumo para el [Práctico 8](prac8_29-10-24.qmd).
+
+# Resultados y Comentarios {-}
+
+::: {#fig-mapaHumedal}
+```{python}
+#| echo: false
+#| warning: false
+#| fig-align: center
+
+import geopandas as gpd
+import pandas as pd
+import leafmap
+import plotly.graph_objects as go
+
+data = pd.read_csv("D:/Descargas/CBITParcelas.csv")
+
+
+data = data.drop(['Columna 19', ' 5', ' 6', ' 7', ' 8', ' 9', ' 10',
+       ' 11', ' 12', ' 13', ' 14', ' 15', ' 16'], axis=1)
+
+data = data[data["Grupo"] == "CAP"]
+
+data[['Latitude', 'Longitude']] = data['Coordinates'].str.split(', ', expand=True).astype(float)
+
+datagdf = gpd.GeoDataFrame(data, 
+                 geometry=gpd.points_from_xy(data['Longitude'], data['Latitude']),
+                          crs='EPSG:4326')
+datagdf = datagdf.drop("Coordinates", axis = 1).reset_index()
+
+humedal = gpd.read_file("D:/Descargas/humedal/polygon.shp").to_crs(epsg =4326)
+
+poligonos_coords = []
+for geom in humedal.geometry:
+    if geom.type == "Polygon":
+        x, y = geom.exterior.xy
+        poligonos_coords.append((x, y))
+    elif geom.type == "MultiPolygon":
+        for sub_geom in geom:
+            x, y = sub_geom.exterior.xy
+            poligonos_coords.append((x, y))
+
+# Crear un diccionario de colores para las categorías de 'Sitio'
+categorias = datagdf['Sitio'].unique()
+colores = {categoria: color for categoria, color in zip(categorias, ['red', 'blue', 'green', "yellow", "orange"])}
+
+# Asignar colores a cada punto según el 'Sitio'
+datagdf['Color'] = datagdf['Sitio'].map(colores)
+
+# Crear el scatter mapbox
+fig = go.Figure(go.Scattermapbox(
+    showlegend=False,
+    lon=datagdf['Longitude'],
+    lat=datagdf['Latitude'],
+    mode='markers',
+    marker=dict(
+        size=8,
+        color=datagdf['Color'],  # Usar la columna de colores
+        symbol='circle'
+    ),
+    text=datagdf['Sitio'],
+    customdata=datagdf[['N_Reclutamiento', 'N_Rebrotes', 'N_Semilla', 'Densidad_Recluta_semilla', 'DENS_SEMILLA', 'DENS_REBROTE']],
+    hovertemplate="<b>Sitio:</b> %{text}<br>" +
+                  "<b>N° Reclutamiento:</b> %{customdata[0]}<br>" +
+                  "<b>N° Rebrotes:</b> %{customdata[1]}<br>" +
+                  "<b>N° Semilla:</b> %{customdata[2]}<br>" +
+                  "<b>Densidad de Semilla:</b> %{customdata[4]}<br>" +
+                  "<b>Densidad de Rebrote:</b> %{customdata[5]}<extra></extra>"
+))
+
+# Agregar el polígono al mapa
+poligonos_coords = [(list(geom.exterior.coords.xy[0]), list(geom.exterior.coords.xy[1])) for geom in humedal.geometry]
+
+# Agregar el polígono al mapa
+for x, y in poligonos_coords:
+    fig.add_trace(go.Scattermapbox(
+        lon=x,
+        lat=y,
+        mode='lines',
+        fill="toself",
+        line=dict(width=2, color='blue'),
+        fillcolor='rgba(0, 0, 252, 0.2)',  # Azul con transparencia
+        showlegend=False,  # No mostrar en la leyenda
+        hovertemplate = "<b>Humedal Estero <br>Santa Rosa - Sector Aerodromo</b><extra></extra>"
+    ))
+    
+# Configurar layout con Google Maps como fondo
+fig.update_layout(
+    mapbox=dict(
+        style="white-bg",  # Fondo transparente
+        layers=[
+            dict(
+                sourcetype="raster",
+                source=[
+                     "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"  # Google Maps (modo mapa)
+                ],
+                below="traces"
+            )
+        ],
+        center=dict(lat=-39.787863, lon=-73.247044),
+        zoom=15
+    ),
+    margin={"r": 0, "t": 0, "l": 0, "b": 0},
+    dragmode="zoom"  # Habilitar zoom con el mouse
+)
+
+fig.show(config={'scrollZoom': True})
+
+```
+
+Mapa interactivo de la zona de estudio. En puntos de colores se muestran las distintas estaciones, mientras que el polígono azul es el humedal asociado.
+:::
+
+::: {#fig-timelapseHumedal}
+{{< video  recursos/p5/timelapse2.mp4 >}}
+
+*Timelapse* del Humedal Cabo Blanco - Santa Rosa. Se puede notar que desde el 2018, la zona colindante con el río Cruces presenta un crecimiento arbóreo significativo.
+:::
+
+
+- Estación 1: Se encontró un sauce llorón (*Salix babylonica*) que actuó como planta nodriza en toda la estación. Bajo su cobertura se registró la mayor regeneración arbórea, con predominancia de arrayán (*Luma apiculata*) y pitra (*Myrceugenia exsucca*). En el área abierta solo se observó arrayán.
+
+::: {#fig-e1 layout-ncol=2}
+
+![](recursos/p5/e1.jpg){#fig-e1}
+
+![](recursos/p5/e1-2.jpg){#fig-e1-2}
+
+Individuos jovenes de Arrayán (*Luma apiculata*).
+:::
+
+- Estación 2: Aquí, como nodriza se contó con un aliso (*Alnus glutinosa*), sin embargo, aunque no se registró regeneración arbórea bajo su cobertura. En el área abierta tampoco hubo regeneración, probablemente debido a la inundación del lugar. Se observaron indicios de camarones de tierra.
+
+![Posible agujero de camarón de tierra.](recursos/p5/e2.jpg){#fig-camaron width=50%}
+
+- Estación 3: Esta estación presentaba mayor anegamiento que la anterior. Se identificaron dos alisos como plantas nodrizas, los cuales protegían una única plántula de pitra. En el área abierta no se detectó regeneración arbórea, aunque sí se observó vegetación típica de humedales, como cortaderas.
+
+::: {#fig-e3 layout-ncol=1}
+
+![Los dos alisos nodrizas y al medio un individuo de pitra.](recursos/p5/e4.jpg){#fig-e3}
+
+![Ejemplar de cortadera](recursos/p5/e4-2.JPEG){#fig-e3-2}
+
+Vegetación asociada a la estación 3.
+:::
+
+- Estación 4: El sitio consistía en una pradera o llanura sin regeneración arbórea, dominada por pastos. Se identificaron cercos rotos y la presencia de ganado bovino, lo que probablemente impide la regeneración del lugar. Además, había algunas construcciones visibles.
+
+- Estación 5: Este sitio correspondía a un parche de bosque que podría considerarse un hualve. Abundaban especies de la familia *Myrtaceae*. Como plantas nodrizas se identificaron un pitra y un arrayán, bajo los cuales se registró la mayor regeneración del sector. En el área abierta, fuera del bosque, no hubo regeneración.
+
+![Individuo de canelo (*Drimys winteri*) dentro del parche de bosque.](recursos/p5/e5.jpg){#fig-e5 width=50%}
+
+Al finalizar el recorrido, discutimos los procesos ecosistémicos ocurridos en el sector. Como se observa en la figura @fig-timelapseHumedal, desde 2004 este lugar presentaba diferentes parcelas, y se nos mencionó que existió un proyecto inmobiliario en la zona. A pesar de esto, el remanente de bosque nativo permanece intacto con el paso del tiempo. También es evidente la agresiva colonización del aliso en los últimos años.
+
+El origen de este bosque no está claro. Se presume que antiguamente cubría toda la zona, pero debido a quemas o talas, quedó reducido a su estado actual. Sin embargo, durante nuestra visita no encontramos evidencia directa de estos eventos (como tocones o restos de carbón vegetal).
+
+Si tuviera que ordenar las estaciones por orden de sucesión ecosistemica, iría en el siguiente orden: 4, 2, 3, 1 y 5, siendo el 4 el lugar más afectado y el 5 el más avanzado en la sucesión.
+
+Con este práctico pude ahondar aún más mis conocimientos acerca del conocimiento de flora y su muestreo,además de complementar *in-situ* acerca de la sucesión. Pude ver, además, a través del *timelapse* lo relativamente rápido que se dispersan las especies exóticas, las cuales, en cosa de un par de años fueron capaces de abarcan grandes áreas. Por contraparte, los parches de bosque se quedaron intactos, evidenciando la dinámica y los grandes tiempos que estos abarcan.
+
+# Foto del día {-}
+
+Fotos icónicas del grupo CAP.
+
+![](recursos/p5/ico1.jpg){width=60% fig-align="center"}
+
+![](recursos/p5/ico2.jpg)

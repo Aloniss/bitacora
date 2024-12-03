@@ -1,0 +1,142 @@
+---
+title: "Visita vivero Huillilemu y Boque Chucaypulli"
+---
+
+# Carácteristicas Generales {-}
+
+1. **Lugar**: Cercanias de San José de Mariquina, Región de Los Ríos, Chile.
+
+2. **Fecha**: 15 de Octubre de 2024.
+
+# Resumen {-}
+
+
+# Descripción de Actividad  {-}
+
+Este práctico incluyó dos salidas. La primera fue al vivero Huillilemu (posible significado en mapudungun: Bosque del Sur), uno de los más grandes de la región. En este vivero se realizan constantemente mejoras en infraestructura, sistemas de riego y capacitaciones. Al momento de la visita, contaba con 18 sectores de experimentación, donde se desarrollan, entre otros, plantaciones de Raulí (*Nothofagus alpina*), rodales de Ulmo (*Eucryphia cordifolia*) y ensayos híbridos. Durante la salida, recorrimos diversas parcelas del vivero.
+
+![Mapa macro del vivero Huillilemu.](recursos/p6/mapamacro.jpg){#fig-macro}
+
+![Zoom a la cartografía del lugar.](recursos/p6/mapaMicro.jpg){#fig-micro}
+
+La labor del vivero está estrechamente vinculada al plan "Siembra por Chile", descrito en el [Práctico 2](prac2_20-08-24.qmd). Este plan llegó a la zona en 2022, promoviendo capacitaciones para la comunidad local, fortaleciendo lazos y compartiendo conocimientos. Además, generó empleos directos, como controladores de malezas y constructores de cercos y vallas, así como empleos indirectos, relacionados con la compra de insumos y elementos de protección personal (EPP). En general, la inversión de CONAF en comunidades y viveros busca producir plantas de alta calidad, capaces de contribuir a la mitigación del cambio climático.
+
+Actualmente, el vivero maneja 20 especies arbóreas con una mayor demanda de Notofagáceas.
+
+En la segunda salida, realizada por la tarde, visitamos el Bosque Chucaypulli (*Pampas de Chucaos*, por su significado en mapudungun), un predio perteneciente a la señora Carmen Muñoz. Según su página web[^1], este predio fue adquirido en 1988, en un estado severamente deforestado. Sin embargo, gracias a la motivación de su propietaria y a las redes que estableció con profesionales de la Universidad Austral de Chile (UACh), entre ellos Claudio Donoso, se emprendió un exitoso proceso de reforestación, tanto experimental como natural. Hoy en día, el bosque alberga especies como zorros, pudús, pumas y chucaos, entre otras.
+
+A pesar de los avances, el bosque se vio afectado por un incendio en terrenos colindantes, pertenecientes a una empresa forestal. Aunque no registré la fecha exacta, según esta noticia[^2], deduzco que ocurrió durante el verano de 2023. Durante nuestra visita, realizamos un muestreo en el área afectada por el incendio, evaluando la vegetación presente, los niveles de regeneración, entre otros aspectos.
+
+[^1]: [Pagina web](https://www.chucaypulli.cl/index.html) del predio Chucaypulli.
+
+[^2]: Noticia de *DiarioSostenible.cl* disponible en el siguiente [enlace](https://www.diariosostenible.cl/noticia/actualidad/2023/09/restauran-con-especies-nativas-predio-afectado-por-incendio-forestal-en-los-rios). De hecho, en las fotografías aparece Giorgio Jackson y Pamela Acevedo.
+
+
+# Resultados y Comentarios {-}
+
+Dentro del vivero, visitamos un huerto de Raulí con tratamientos muy específicos. En primer lugar, todos los individuos son injertos de un árbol semillero originario de la Cordillera. Para evitar la endogamia, los "hermanos" deben mantenerse a una distancia mínima de 25 metros. Cada árbol se maneja como si fuera parte de un huerto frutal, lo que incluye prácticas como la poda aérea.
+
+Durante los períodos de polinización, las flores femeninas se aíslan utilizando bolsas, lo que representa un gran desafío debido a su tamaño tan pequeño. Esto se complica aún más por el hecho de que la polinización del Raulí es principalmente aérea y un solo árbol puede albergar más de 100 flores femeninas, lo que hace que esta tarea sea especialmente laboriosa. Posterior a esto, obtienen pólen de otros individuos e inseminan las flores aisladas. 
+
+Los responsables del huerto son conscientes del limitado *pool* genético derivado del uso de clones de un único árbol de la cordillera. Sin embargo, destacan que esta opción es preferible a no contar con material genético alguno, y estoy de acuerdo con esta postura. Finalmente, el sector incluye una cortina de polen, formada por varias hileras de pinos (*Pinus radiata*).
+
+::: {#fig-rauli layout-ncol=2}
+
+![Flor femenína de un individuo de Raulí.](recursos/p6/femenino.jpg){#fig-rauliFemenino}
+
+![Bolsa de aislamiento de flores femenínas de Raulí.](recursos/p6/bolsa.jpg){#fig-rauliBolsa}
+
+Plantación de *Nothofagus alpina* en el vivero
+:::
+
+También visitamos plantaciones de ulmos, donde destacó el manejo de especies invasoras como la murra (Rubus ulmifolius). Este control se realiza mediante el uso de ovejas, lo cual resulta particularmente beneficioso, ya que los ulmos están en una fase adulta y no se ven afectados directamente. Aunque esta práctica podría impactar la regeneración natural, en este caso no representa un problema significativo, dado que el objetivo principal de la plantación es la generación de clones productivos para exportación.
+
+Las semillas obtenidas tanto de estos jardines como de otras fuentes se siembran en platabandas, donde las plantas se "engordan", es decir, se lignifican y aumentan su altura. Este proceso prácticamente elimina el riesgo de depredación por liebres. Las platabandas se plantan utilizando herramientas locales, como la máquina específica mostrada en la @fig-artefacto, diseñada para facilitar este trabajo.
+
+::: {#fig-platabandas layout-ncol=2}
+
+![Platabandas](recursos/p6/platabanda.jpg){#fig-platabanda}
+
+![Artefacto local para plantar en platabandas.](recursos/p6/artefacto.jpg){#fig-artefacto}
+
+Plantación de *Nothofagus alpina* en el vivero
+:::
+
+También cuentan con buena cantidad de invernaderos, albergando alerces (*Fitzroya cupressoides*), laurel (*Laurelia sempervirens*) y las Notofagáceas mencionadas. Su proceso, generalmente contempla formación de esquejes, enraizamiento, aclimatación al sol y sombra.
+
+::: {#fig-invernadero layout-ncol=2}
+
+![Especímenes de Raulí en invernadero.](recursos/p6/raulis.jpg){#fig-raulisInver}
+
+![Porpagación de alerces en invernadero.](recursos/p6/alerce.jpg){#fig-alerces}
+
+Plantación de *Nothofagus alpina* en el vivero
+:::
+
+Por otra parte, en la actividad de la tarde, se registró todo el muestreo en la aplicación *AppSheets*. Lamentablemente, a la fecha de escritura de este práctico, tanto la página como los resultados no se encuentran disponibles, por lo que las descripciones se verán limitadas. En el lugar del incendio, Daniel Koda, nos dió una charla acerca de nuevas formas para el monitoreo de acciones y planes de conservación, posterior a esto, comenzó el muestreo. En nuestro lugar (escogido al azar), predominó escaza vegetacion arbórea, en general árboles muertos en pie producto de los incendios. También destacaban predomiancia de herbáceas en el lugar.
+
+![Mi compañera, Sofía Pinto, en el lugar de muestreo del incendio. Se puede observar árboles muertos en pie y abundancia de herbáceas.](recursos/p6/sofi.jpg){#fig-sofi}
+
+A su vez, intenté obtener el NDVI (*Normalized Difference Vegetation Index*) junto con el NBR (*Normalized Burn Ratio*) del sector, tal como lo hice con el [Práctico 2](prac2_20-08-24.qmd). Lamentablemente, no pude obtener las coordenadas precisas y por temas de tiempo, no pude mapear todo. Sin embargo, obtuve el siguiente gráfico exploratorio. Cabe resaltar que este abarca un área extensa y por ende, los valores pueden estar atados a mucha dispersión.
+
+:::{.column-page}
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+
+library(mgcv)
+library(tidyverse)
+library(lubridate)
+library(plotly)
+
+
+data <- read.csv("D:/Descargas/ndviNbrPorFecha.csv") |> 
+  mutate(fecha = ymd(fecha)) |> 
+  select(-c(.geo, system.index)) |> 
+  filter(! is.na(NBR_mean))
+
+# Ajustar un modelo GAM para 'media'
+gam_NBR_mean <- gam(NBR_mean ~ s(as.numeric(fecha)), data = data)
+
+# Ajustar un modelo GAM para 'SAVI_mean'
+gam_NDVI_mean <- gam(NDVI_mean ~ s(as.numeric(fecha)), data = data)
+
+# Generar predicciones con los modelos ajustados
+data$gam_NBR_mean <- predict(gam_NBR_mean)
+data$gam_NDVI_mean <- predict(gam_NDVI_mean)
+
+
+
+p <- ggplot(data, aes(x = fecha)) +
+  geom_point(aes(y = NBR_mean), color = "red", size = 2) +
+  geom_line(aes(y = gam_NBR_mean), color = "red", linetype = "dashed") +
+  geom_point(aes(y = NDVI_mean), color = "darkgreen", size = 2) +
+  geom_line(aes(y = gam_NDVI_mean), color = "darkgreen", linetype = "dashed") +
+  labs(title = "NDVI y NBR con ajustes GAM",
+       x = "Fecha",
+       y = "Valor") +
+  scale_y_continuous(sec.axis = sec_axis(~., name = "SAVI Mean")) +
+  theme_minimal() 
+
+ggplotly(p)
+
+```
+
+:::
+
+En primer lugar, es evidente el arduo trabajo que implica mantener un vivero de estas dimensiones, gestionando variables físicas, genéticas y ecológicas. Sin duda, este práctico permitió comprender en mayor profundidad los procesos necesarios para la propagación de especies de alta calidad.
+
+Durante el práctico de la tarde, se pudo observar, a pesar de haber transcurrido menos de un año desde el incendio, parte de una sucesión secundaria. En esta etapa predominan especies herbáceas pioneras, que progresivamente darán paso a especies más especializadas e incluso a aquellas que estaban presentes antes del incendio (claro está, siempre que la forestal vecina no provoque más incendios).
+
+Además, es notable el gran compromiso local en ambos casos. Tanto el vivero como el bosque son gestionados por miembros de la comunidad o directamente por sus propietarios. Esto evidencia que el cambio de paradigma respecto al manejo del bosque nativo está comenzando a tener un impacto positivo. Cabe destacar que, aunque las instituciones públicas como CONAF a veces pueden ser excesivamente burocráticas, también están presentes, acompañando y facilitando estos procesos. Es cierto que no lo hacen únicamente por buena voluntad, ya que deben cumplir metas específicas, pero al menos la forma en que lo desarrollan, involucrándose con la comunidad, resulta aceptable.
+
+# Foto del día {-}
+
+![](recursos/p6/cristan1.jpg)
+
+
+
+
+
+
