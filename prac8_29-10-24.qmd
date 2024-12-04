@@ -1,5 +1,5 @@
 ---
-title: "Sitematización de datos"
+title: "Análisis y sistematización de datos"
 ---
 
 # Características Generales {-}
@@ -14,17 +14,33 @@ title: "Sitematización de datos"
 
 # Descripción de Actividad  {-}
 
-Sitematizamos los datos que obtuvimos en el [Practico 5](prac5_24-09-24.qmd).
+En este práctico se analizó los datos que obtuvimos en el [Práctico 5](prac5_24-09-24.qmd). De igual forma, comandado por Inao Vásquez, nos ubicamos en una sala de la facultad para discutir acerca de los resultados obtenidos. Lo bueno fue que el muestreo se llevó a cabo a través de una aplicación, por lo que las respuestas se encontraban tratas en su totalidad, ahorrando tiempo en la estructura y homogeneización de los datos.
 
+En base a esto, se realizaron 9 preguntas:
 
+1. ¿Cuántas Parcelas hizo cada grupo por Sitio?
 
+2. ¿Cuántos Tipos de “Nodriza” se muestrearon?
 
+3. ¿Cuántas Parcelas hay por Tipo de Nodriza?
+
+4. ¿Cuánta superficie hay por tipo de nodriza?
+
+5. Calcular densidad de reclutas “rebrote” y “semilla”.
+
+6. ¿La regeneración varió por sitio?
+
+7. ¿La regeneración por semilla varió bajo y fuera de las plantas nodrizas?
+
+8. ¿Existe un efecto de la especie de planta nodriza en la regeneración por semilla?
+
+9. Bajo qué especie de planta nodriza hay mayor reclutamiento de: Arrayán, Maitén, Pitra.
+
+A continuación responderé a cada una de las preguntas.
 
 # Resultados y Comentarios {-}
 
-
 ## Pregunta 1 {-}
-
 
 ::: {#fig-preg1}
 ```{r}
@@ -54,6 +70,8 @@ parcelas |>
 
 En este caso, los valores `NA` se interpretaron como 0.
 :::
+
+En promedio, cada grupo hizo 10 parcelas, teniendo algunos grupos con pocos muestreos, a lo cual atribuyo a fallas en el registro dentro de la aplicación.
 
 ## Pregunta 2, 3 y 4{-}
 
@@ -88,6 +106,7 @@ tabla_final |>
   row_spec(nrow(tabla_final), bold = TRUE)
 ```
 
+En total, se reconocieron 10 plantas nodrizas, 6 nativas y 4 exóticas. De estas, la especie más frecuente fue el helecho *Blechnum chilense* seguido por el Maitén (*Maytenus boaria*) y el aliso (*Alnus glutinosa*). De forma directa no se pudo obtener la cantidad de parcelas, pero sí su área. En general, las parcelas más grandes siguen el mismo comportamiento de frecuencia. 
 
 ## Pregunta 5 {-}
 
@@ -103,6 +122,8 @@ parcelas |>
   kable_paper("hover") |>
   scroll_box(height = "400px")
 ```
+
+En esta tablas se calcula ambas densidades discrimandas por Especie Nodriza (`Nodriza_sp`) y el sitio de aparición.
 
 ## Pregunta 6 {-}
 
@@ -135,12 +156,56 @@ ggplotly(p)
 
 ```
 
+En general, la regeneración mostró valores más altos en los sitios previamente identificados como más avanzados dentro de la sucesión. El sitio 1 presentaba un suelo moderadamente saturado y contaba con individuos arbóreos. Asimismo, el sitio 5 destacó por su mayor cantidad de rebrotes, ya que se trata de un parche de bosque antiguo que proporciona las condiciones necesarias para este proceso. En contraste, sitios como el 3, con un alto grado de anegamiento, o el 4, una pradera afectada por el pastoreo bovino, registraron poca regeneración. En base a estos resultados, podemos afirmar que, al momento del muestreo, la regeneración varió significativamente entre los sitios. Sin embargo, es importante considerar posibles errores de muestreo y la necesidad de realizar un seguimiento más frecuente.
 
 ## Pregunta 7 {-}
 
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+
+parcelas <- parcelas |> 
+   mutate(densiRebrote = N_Rebrotes/`Área parcela`,
+          densiSemilla = N_Semilla/`Área parcela`)
+
+apa <- parcelas |> 
+  group_by(Nodriza) |>
+  summarise(media = mean(densiSemilla),
+            sd = sd(densiSemilla)) |> 
+  ggplot(aes(x = Nodriza,
+             y = media,
+             fill = Nodriza)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(aes(ymax = sd,
+                    ymin = media/2,
+                    width = 0.2)) +
+  theme_bw() +
+  theme(legend.position="none") +
+  ylab("Densidad de Semillas Promedio") +
+  coord_cartesian(expand = F,
+                  xlim = c(0.1, 2.9),
+                  ylim = c(0, 1.75))
+
+ggplotly(apa)
+
+```
 
 ## Pregunta 8 {-}
 
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+parcelas |> 
+  group_by(Nodriza_sp) |> 
+  summarise(densidad_semilla = mean(densiSemilla),
+            sumaSemilla = sum(N_Semilla)) |> 
+  arrange(desc(densidad_semilla)) |> 
+  kbl(escape = FALSE,
+      col.names = c("Especie Nodriza", "Densidad Promedio de Semilla", "Cantidad de Semillas"))  |> 
+  kable_paper("hover")
+```
 
 ## Pregunta 9 {-}
 

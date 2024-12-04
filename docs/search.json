@@ -158,9 +158,9 @@
   {
     "objectID": "prac8_29-10-24.html",
     "href": "prac8_29-10-24.html",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "",
-    "text": "Lugar:\nFecha:",
+    "text": "Lugar: Sala 1, Facultad de Ciencias Forestales y Recursos Naturales, UACh, Valdivia\nFecha: 29 de Octubre de 2024",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -169,9 +169,9 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-1",
     "href": "prac8_29-10-24.html#pregunta-1",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 1",
-    "text": "Pregunta 1\n\n\n\n\n\n\n\n\nGrupo\n1\n2\n3\n4\n5\nTotal\n\n\n\n\nByS\n2\n2\n2\n2\n2\n10\n\n\nCAP\n3\n2\n2\n2\n2\n11\n\n\nCalab\n1\n1\n2\n1\n2\n7\n\n\nCaraevio fc\n5\n1\n4\n2\n2\n14\n\n\nCoi\n2\n2\n2\n2\n2\n10\n\n\nDafase\n2\n2\n2\n2\n2\n10\n\n\nGrupo👍\n2\n4\n2\n2\n2\n12\n\n\nJMJ\n2\n2\n2\n2\n2\n10\n\n\nMDM\n2\n2\n2\n2\n2\n10\n\n\nPIN\n2\n2\n2\n2\n1\n9\n\n\nPlantulitas\n2\n2\n2\n2\n2\n10\n\n\nRan\n2\n2\n2\n2\n2\n10\n\n\ncalab\n1\n1\n0\n1\n0\n3\n\n\nko\n2\n2\n2\n2\n2\n10\n\n\nlos pika\n2\n2\n2\n2\n2\n10\n\n\nNA\n1\n2\n0\n0\n0\n3\n\n\n\n\n\n\n\n\n\nFigura 1: En este caso, los valores NA se interpretaron como 0.",
+    "text": "Pregunta 1\n\n\n\n\n\n\n\n\nGrupo\n1\n2\n3\n4\n5\nTotal\n\n\n\n\nByS\n2\n2\n2\n2\n2\n10\n\n\nCAP\n3\n2\n2\n2\n2\n11\n\n\nCalab\n1\n1\n2\n1\n2\n7\n\n\nCaraevio fc\n5\n1\n4\n2\n2\n14\n\n\nCoi\n2\n2\n2\n2\n2\n10\n\n\nDafase\n2\n2\n2\n2\n2\n10\n\n\nGrupo👍\n2\n4\n2\n2\n2\n12\n\n\nJMJ\n2\n2\n2\n2\n2\n10\n\n\nMDM\n2\n2\n2\n2\n2\n10\n\n\nPIN\n2\n2\n2\n2\n1\n9\n\n\nPlantulitas\n2\n2\n2\n2\n2\n10\n\n\nRan\n2\n2\n2\n2\n2\n10\n\n\ncalab\n1\n1\n0\n1\n0\n3\n\n\nko\n2\n2\n2\n2\n2\n10\n\n\nlos pika\n2\n2\n2\n2\n2\n10\n\n\nNA\n1\n2\n0\n0\n0\n3\n\n\n\n\n\n\n\n\n\nFigura 1: En este caso, los valores NA se interpretaron como 0.\n\n\n\nEn promedio, cada grupo hizo 10 parcelas, teniendo algunos grupos con pocos muestreos, a lo cual atribuyo a fallas en el registro dentro de la aplicación.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -180,9 +180,9 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-2-3-y-4",
     "href": "prac8_29-10-24.html#pregunta-2-3-y-4",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 2, 3 y 4",
-    "text": "Pregunta 2, 3 y 4\n\n\n\n\n\nEspecie Nodriza\nFrecuencia de Nodriza\nÁrea de parcela (m2)\n\n\n\n\nAliso\n10\n33\n\n\nArrayan\n7\n29\n\n\nBlechnum chilense\n20\n54\n\n\nJunco\n6\n12\n\n\nMaiten\n12\n46\n\n\nMaqui\n2\n8\n\n\nPitra\n7\n26\n\n\nSauce gato\n4\n16\n\n\nSauce lloron\n2\n14\n\n\nTemu\n7\n24\n\n\nTotal\n77\n262",
+    "text": "Pregunta 2, 3 y 4\n\n\n\n\n\nEspecie Nodriza\nFrecuencia de Nodriza\nÁrea de parcela (m2)\n\n\n\n\nAliso\n10\n33\n\n\nArrayan\n7\n29\n\n\nBlechnum chilense\n20\n54\n\n\nJunco\n6\n12\n\n\nMaiten\n12\n46\n\n\nMaqui\n2\n8\n\n\nPitra\n7\n26\n\n\nSauce gato\n4\n16\n\n\nSauce lloron\n2\n14\n\n\nTemu\n7\n24\n\n\nTotal\n77\n262\n\n\n\n\n\n\n\nEn total, se reconocieron 10 plantas nodrizas, 6 nativas y 4 exóticas. De estas, la especie más frecuente fue el helecho Blechnum chilense seguido por el Maitén (Maytenus boaria) y el aliso (Alnus glutinosa). De forma directa no se pudo obtener la cantidad de parcelas, pero sí su área. En general, las parcelas más grandes siguen el mismo comportamiento de frecuencia.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -191,9 +191,9 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-5",
     "href": "prac8_29-10-24.html#pregunta-5",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 5",
-    "text": "Pregunta 5\n\n\n\n\n\n\n\n\n\n\n\n\nNodriza_sp\nSitio\nDensidad de Semillas\nPromedio\nDensidad de Rebrote\nPromedio\n\n\n\n\nAbierto\n1\n0.1166667\n0.4833333\n\n\nAbierto\n2\n0.0211111\n0.0000000\n\n\nAbierto\n3\n0.0000000\n0.0000000\n\n\nAbierto\n4\n0.0500000\n0.0333333\n\n\nAbierto\n5\n0.0512821\n0.2692308\n\n\nAliso\n2\n0.0000000\n0.0000000\n\n\nAliso\n3\n0.5937500\n0.0000000\n\n\nArrayan\n1\n0.5000000\n0.5000000\n\n\nArrayan\n2\n0.5000000\n2.5000000\n\n\nArrayan\n4\n0.0000000\n0.5000000\n\n\nArrayan\n5\n0.7812500\n1.0000000\n\n\nBlechnum chilense\n1\n1.5833333\n1.4166667\n\n\nBlechnum chilense\n2\n0.8571429\n0.6428571\n\n\nBlechnum chilense\n3\n0.0000000\n0.0000000\n\n\nJunco\n4\n0.0000000\n0.0833333\n\n\nMaiten\n1\n1.3229167\n0.4166667\n\n\nMaiten\n2\n0.2500000\n0.2500000\n\n\nMaiten\n4\n1.1666667\n1.4074074\n\n\nMaqui\n1\n0.0000000\n1.5000000\n\n\nMaqui\n4\n0.0000000\n0.0000000\n\n\nPitra\n2\n0.0625000\n1.6250000\n\n\nPitra\n5\n1.5500000\n0.8500000\n\n\nSauce gato\n2\n0.2500000\n0.0000000\n\n\nSauce gato\n4\n0.0000000\n0.0000000\n\n\nSauce lloron\n1\n4.5000000\n2.5000000\n\n\nSauce lloron\n3\n0.3333333\n1.0833333\n\n\nTemu\n5\n0.3809524\n6.6964286",
+    "text": "Pregunta 5\n\n\n\n\n\n\n\n\n\n\n\n\nNodriza_sp\nSitio\nDensidad de Semillas\nPromedio\nDensidad de Rebrote\nPromedio\n\n\n\n\nAbierto\n1\n0.1166667\n0.4833333\n\n\nAbierto\n2\n0.0211111\n0.0000000\n\n\nAbierto\n3\n0.0000000\n0.0000000\n\n\nAbierto\n4\n0.0500000\n0.0333333\n\n\nAbierto\n5\n0.0512821\n0.2692308\n\n\nAliso\n2\n0.0000000\n0.0000000\n\n\nAliso\n3\n0.5937500\n0.0000000\n\n\nArrayan\n1\n0.5000000\n0.5000000\n\n\nArrayan\n2\n0.5000000\n2.5000000\n\n\nArrayan\n4\n0.0000000\n0.5000000\n\n\nArrayan\n5\n0.7812500\n1.0000000\n\n\nBlechnum chilense\n1\n1.5833333\n1.4166667\n\n\nBlechnum chilense\n2\n0.8571429\n0.6428571\n\n\nBlechnum chilense\n3\n0.0000000\n0.0000000\n\n\nJunco\n4\n0.0000000\n0.0833333\n\n\nMaiten\n1\n1.3229167\n0.4166667\n\n\nMaiten\n2\n0.2500000\n0.2500000\n\n\nMaiten\n4\n1.1666667\n1.4074074\n\n\nMaqui\n1\n0.0000000\n1.5000000\n\n\nMaqui\n4\n0.0000000\n0.0000000\n\n\nPitra\n2\n0.0625000\n1.6250000\n\n\nPitra\n5\n1.5500000\n0.8500000\n\n\nSauce gato\n2\n0.2500000\n0.0000000\n\n\nSauce gato\n4\n0.0000000\n0.0000000\n\n\nSauce lloron\n1\n4.5000000\n2.5000000\n\n\nSauce lloron\n3\n0.3333333\n1.0833333\n\n\nTemu\n5\n0.3809524\n6.6964286\n\n\n\n\n\n\n\nEn esta tablas se calcula ambas densidades discrimandas por Especie Nodriza (Nodriza_sp) y el sitio de aparición.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -202,9 +202,9 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-6",
     "href": "prac8_29-10-24.html#pregunta-6",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 6",
-    "text": "Pregunta 6",
+    "text": "Pregunta 6\n\n\n\n\n\n\nEn general, la regeneración mostró valores más altos en los sitios previamente identificados como más avanzados dentro de la sucesión. El sitio 1 presentaba un suelo moderadamente saturado y contaba con individuos arbóreos. Asimismo, el sitio 5 destacó por su mayor cantidad de rebrotes, ya que se trata de un parche de bosque antiguo que proporciona las condiciones necesarias para este proceso. En contraste, sitios como el 3, con un alto grado de anegamiento, o el 4, una pradera afectada por el pastoreo bovino, registraron poca regeneración. En base a estos resultados, podemos afirmar que, al momento del muestreo, la regeneración varió significativamente entre los sitios. Sin embargo, es importante considerar posibles errores de muestreo y la necesidad de realizar un seguimiento más frecuente.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -213,7 +213,7 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-7",
     "href": "prac8_29-10-24.html#pregunta-7",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 7",
     "text": "Pregunta 7",
     "crumbs": [
@@ -224,9 +224,9 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-8",
     "href": "prac8_29-10-24.html#pregunta-8",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 8",
-    "text": "Pregunta 8",
+    "text": "Pregunta 8\n\n\n\n\n\nEspecie Nodriza\nDensidad Promedio de Semilla\nCantidad de Semillas\n\n\n\n\nSauce lloron\n2.4166667\n13\n\n\nMaiten\n1.1944444\n39\n\n\nPitra\n1.1250000\n18\n\n\nBlechnum chilense\n0.7750000\n31\n\n\nArrayan\n0.5089286\n29\n\n\nAliso\n0.4750000\n12\n\n\nTemu\n0.3809524\n8\n\n\nSauce gato\n0.1250000\n2\n\n\nAbierto\n0.0483796\n13\n\n\nJunco\n0.0000000\n0\n\n\nMaqui\n0.0000000\n0",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -235,7 +235,7 @@
   {
     "objectID": "prac8_29-10-24.html#pregunta-9",
     "href": "prac8_29-10-24.html#pregunta-9",
-    "title": "Sitematización de datos",
+    "title": "Análisis y sistematización de datos",
     "section": "Pregunta 9",
     "text": "Pregunta 9",
     "crumbs": [
@@ -248,7 +248,7 @@
     "href": "practicosIntro.html",
     "title": "Prácticos",
     "section": "",
-    "text": "A la derecha se pueden observar los nueve prácticos ordenados por fecha. A continuación, mostraré un compilado de fotografías destacadas durante el ramo.",
+    "text": "A la izquierda se pueden observar los nueve prácticos ordenados por fecha. A continuación, mostraré un compilado de fotografías destacadas durante el ramo.",
     "crumbs": [
       "Prácticos"
     ]

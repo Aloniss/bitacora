@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sitematización de datos – Bitácora Práctica de Restauración de Ecosistemas</title>
+<title>Análisis y sistematización de datos – Bitácora Práctica de Restauración de Ecosistemas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Sitematización de datos</h1>
+          <h1 class="quarto-secondary-nav-title">Análisis y sistematización de datos</h1>
         </a>     
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Sitematización de datos</h1>
+<h1 class="title d-none d-lg-block">Análisis y sistematización de datos</h1>
 </div>
 
 
@@ -265,8 +265,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="características-generales" class="level1 unnumbered">
 <h1 class="unnumbered">Características Generales</h1>
 <ol type="1">
-<li><p><strong>Lugar</strong>:</p></li>
-<li><p><strong>Fecha</strong>:</p></li>
+<li><p><strong>Lugar</strong>: Sala 1, Facultad de Ciencias Forestales y Recursos Naturales, UACh, Valdivia</p></li>
+<li><p><strong>Fecha</strong>: 29 de Octubre de 2024</p></li>
 </ol>
 </section>
 <section id="resumen" class="level1 unnumbered">
@@ -274,7 +274,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="descripción-de-actividad" class="level1 unnumbered">
 <h1 class="unnumbered">Descripción de Actividad</h1>
-<p>Sitematizamos los datos que obtuvimos en el <a href="./prac5_24-09-24.html">Practico 5</a>.</p>
+<p>En este práctico se analizó los datos que obtuvimos en el <a href="./prac5_24-09-24.html">Práctico 5</a>. De igual forma, comandado por Inao Vásquez, nos ubicamos en una sala de la facultad para discutir acerca de los resultados obtenidos. Lo bueno fue que el muestreo se llevó a cabo a través de una aplicación, por lo que las respuestas se encontraban tratas en su totalidad, ahorrando tiempo en la estructura y homogeneización de los datos.</p>
+<p>En base a esto, se realizaron 9 preguntas:</p>
+<ol type="1">
+<li><p>¿Cuántas Parcelas hizo cada grupo por Sitio?</p></li>
+<li><p>¿Cuántos Tipos de “Nodriza” se muestrearon?</p></li>
+<li><p>¿Cuántas Parcelas hay por Tipo de Nodriza?</p></li>
+<li><p>¿Cuánta superficie hay por tipo de nodriza?</p></li>
+<li><p>Calcular densidad de reclutas “rebrote” y “semilla”.</p></li>
+<li><p>¿La regeneración varió por sitio?</p></li>
+<li><p>¿La regeneración por semilla varió bajo y fuera de las plantas nodrizas?</p></li>
+<li><p>¿Existe un efecto de la especie de planta nodriza en la regeneración por semilla?</p></li>
+<li><p>Bajo qué especie de planta nodriza hay mayor reclutamiento de: Arrayán, Maitén, Pitra.</p></li>
+</ol>
+<p>A continuación responderé a cada una de las preguntas.</p>
 </section>
 <section id="resultados-y-comentarios" class="level1 unnumbered">
 <h1 class="unnumbered">Resultados y Comentarios</h1>
@@ -454,6 +467,7 @@ Figura&nbsp;1: En este caso, los valores <code>NA</code> se interpretaron como 0
 </figcaption>
 </figure>
 </div>
+<p>En promedio, cada grupo hizo 10 parcelas, teniendo algunos grupos con pocos muestreos, a lo cual atribuyo a fallas en el registro dentro de la aplicación.</p>
 </section>
 <section id="pregunta-2-3-y-4" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-2-3-y-4">Pregunta 2, 3 y 4</h2>
@@ -529,6 +543,7 @@ Figura&nbsp;1: En este caso, los valores <code>NA</code> se interpretaron como 0
 
 </div>
 </div>
+<p>En total, se reconocieron 10 plantas nodrizas, 6 nativas y 4 exóticas. De estas, la especie más frecuente fue el helecho <em>Blechnum chilense</em> seguido por el Maitén (<em>Maytenus boaria</em>) y el aliso (<em>Alnus glutinosa</em>). De forma directa no se pudo obtener la cantidad de parcelas, pero sí su área. En general, las parcelas más grandes siguen el mismo comportamiento de frecuencia.</p>
 </section>
 <section id="pregunta-5" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-5">Pregunta 5</h2>
@@ -721,21 +736,101 @@ Promedio</th>
 
 </div>
 </div>
+<p>En esta tablas se calcula ambas densidades discrimandas por Especie Nodriza (<code>Nodriza_sp</code>) y el sitio de aparición.</p>
 </section>
 <section id="pregunta-6" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-6">Pregunta 6</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-14d72e9185a685f36c0f" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-14d72e9185a685f36c0f">{"x":{"data":[{"orientation":"v","width":[0.44999999999999996,0.45000000000000018,0.45000000000000018,0.45000000000000018,0.44999999999999929],"base":[0,0,0,0,0],"x":[0.77500000000000002,1.7749999999999999,2.7749999999999999,3.7749999999999999,4.7750000000000004],"y":[0.7297979797969697,0.41935483870967744,0.036111111099999996,0.20436507935714285,2.0972222222222223],"text":["Sitio: 1<br />Densidad: 0.72979798<br />Tipo: Densidad de Rebrote","Sitio: 2<br />Densidad: 0.41935484<br />Tipo: Densidad de Rebrote","Sitio: 3<br />Densidad: 0.03611111<br />Tipo: Densidad de Rebrote","Sitio: 4<br />Densidad: 0.20436508<br />Tipo: Densidad de Rebrote","Sitio: 5<br />Densidad: 2.09722222<br />Tipo: Densidad de Rebrote"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Densidad de Rebrote","legendgroup":"Densidad de Rebrote","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.45000000000000018,0.45000000000000018,0.45000000000000018,0.44999999999999973,0.44999999999999929],"base":[0,0,0,0,0],"x":[1.2250000000000001,2.2250000000000001,3.2250000000000001,4.2249999999999996,5.2249999999999996],"y":[0.82828282827272726,0.26424731182806449,0.16944444444333334,0.15178571428571427,0.46836419753333336],"text":["Sitio: 1<br />Densidad: 0.82828283<br />Tipo: Densidad de Semillas","Sitio: 2<br />Densidad: 0.26424731<br />Tipo: Densidad de Semillas","Sitio: 3<br />Densidad: 0.16944444<br />Tipo: Densidad de Semillas","Sitio: 4<br />Densidad: 0.15178571<br />Tipo: Densidad de Semillas","Sitio: 5<br />Densidad: 0.46836420<br />Tipo: Densidad de Semillas"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Densidad de Semillas","legendgroup":"Densidad de Semillas","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":43.105022831050235},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.10000000000000001,5.9000000000000004],"tickmode":"array","ticktext":["1","2","3","4","5"],"tickvals":[1,2,3,4,5],"categoryorder":"array","categoryarray":["1","2","3","4","5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Sitio","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,2.3999999999999999],"tickmode":"array","ticktext":["0.0","0.5","1.0","1.5","2.0"],"tickvals":[0,0.5,1,1.5,2],"categoryorder":"array","categoryarray":["0.0","0.5","1.0","1.5","2.0"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Densidad","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Tipo","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"51402ad13635":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"51402ad13635","visdat":{"51402ad13635":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-5adc47db750a0759d9e2" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5adc47db750a0759d9e2">{"x":{"data":[{"orientation":"v","width":[0.44999999999999996,0.45000000000000018,0.45000000000000018,0.45000000000000018,0.44999999999999929],"base":[0,0,0,0,0],"x":[0.77500000000000002,1.7749999999999999,2.7749999999999999,3.7749999999999999,4.7750000000000004],"y":[0.7297979797969697,0.41935483870967744,0.036111111099999996,0.20436507935714285,2.0972222222222223],"text":["Sitio: 1<br />Densidad: 0.72979798<br />Tipo: Densidad de Rebrote","Sitio: 2<br />Densidad: 0.41935484<br />Tipo: Densidad de Rebrote","Sitio: 3<br />Densidad: 0.03611111<br />Tipo: Densidad de Rebrote","Sitio: 4<br />Densidad: 0.20436508<br />Tipo: Densidad de Rebrote","Sitio: 5<br />Densidad: 2.09722222<br />Tipo: Densidad de Rebrote"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Densidad de Rebrote","legendgroup":"Densidad de Rebrote","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":[0.45000000000000018,0.45000000000000018,0.45000000000000018,0.44999999999999973,0.44999999999999929],"base":[0,0,0,0,0],"x":[1.2250000000000001,2.2250000000000001,3.2250000000000001,4.2249999999999996,5.2249999999999996],"y":[0.82828282827272726,0.26424731182806449,0.16944444444333334,0.15178571428571427,0.46836419753333336],"text":["Sitio: 1<br />Densidad: 0.82828283<br />Tipo: Densidad de Semillas","Sitio: 2<br />Densidad: 0.26424731<br />Tipo: Densidad de Semillas","Sitio: 3<br />Densidad: 0.16944444<br />Tipo: Densidad de Semillas","Sitio: 4<br />Densidad: 0.15178571<br />Tipo: Densidad de Semillas","Sitio: 5<br />Densidad: 0.46836420<br />Tipo: Densidad de Semillas"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"Densidad de Semillas","legendgroup":"Densidad de Semillas","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":43.105022831050235},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.10000000000000001,5.9000000000000004],"tickmode":"array","ticktext":["1","2","3","4","5"],"tickvals":[1,2,3,4,5],"categoryorder":"array","categoryarray":["1","2","3","4","5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Sitio","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,2.3999999999999999],"tickmode":"array","ticktext":["0.0","0.5","1.0","1.5","2.0"],"tickvals":[0,0.5,1,1.5,2],"categoryorder":"array","categoryarray":["0.0","0.5","1.0","1.5","2.0"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Densidad","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"Tipo","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"10681afb63b0":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"10681afb63b0","visdat":{"10681afb63b0":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
+<p>En general, la regeneración mostró valores más altos en los sitios previamente identificados como más avanzados dentro de la sucesión. El sitio 1 presentaba un suelo moderadamente saturado y contaba con individuos arbóreos. Asimismo, el sitio 5 destacó por su mayor cantidad de rebrotes, ya que se trata de un parche de bosque antiguo que proporciona las condiciones necesarias para este proceso. En contraste, sitios como el 3, con un alto grado de anegamiento, o el 4, una pradera afectada por el pastoreo bovino, registraron poca regeneración. En base a estos resultados, podemos afirmar que, al momento del muestreo, la regeneración varió significativamente entre los sitios. Sin embargo, es importante considerar posibles errores de muestreo y la necesidad de realizar un seguimiento más frecuente.</p>
 </section>
 <section id="pregunta-7" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-7">Pregunta 7</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-554e3d394f50b755c3ab" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-554e3d394f50b755c3ab">{"x":{"data":[{"orientation":"v","width":0.89999999999999991,"base":0,"x":[1],"y":[0.048379629629629627],"text":"Nodriza: FALSE<br />media: 0.04837963<br />Nodriza: FALSE","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"FALSE","legendgroup":"FALSE","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.90000000000000013,"base":0,"x":[2],"y":[0.70156926406926412],"text":"Nodriza:  TRUE<br />media: 0.70156926<br />Nodriza:  TRUE","type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(0,191,196,1)","line":{"width":1.8897637795275593,"color":"transparent"}},"name":"TRUE","legendgroup":"TRUE","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1],"y":[0.048379629629629627],"text":"Nodriza: FALSE<br />media: 0.04837963<br />Nodriza: FALSE<br />sd: 0.2236446<br />media/2: 0.02418981<br />width: 0.5","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.17526495276600021],"arrayminus":[0.024189814814814813],"type":"data","width":32.000000000000028,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"FALSE","legendgroup":"FALSE","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2],"y":[0.70156926406926412],"text":"Nodriza:  TRUE<br />media: 0.70156926<br />Nodriza:  TRUE<br />sd: 1.4140942<br />media/2: 0.35078463<br />width: 0.5","type":"scatter","mode":"lines","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[0.71252493006216144],"arrayminus":[0.35078463203463206],"type":"data","width":32.000000000000028,"symmetric":false,"color":"rgba(0,0,0,1)"},"name":"TRUE","legendgroup":"TRUE","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":43.105022831050235},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.10000000000000001,2.8999999999999999],"tickmode":"array","ticktext":["FALSE","TRUE"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["FALSE","TRUE"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Nodriza","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,1.75],"tickmode":"array","ticktext":["0.0","0.5","1.0","1.5"],"tickvals":[0,0.5,1,1.5],"categoryorder":"array","categoryarray":["0.0","0.5","1.0","1.5"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Densidad de Semillas Promedio","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"106843145236":{"x":{},"y":{},"fill":{},"type":"bar"},"106855de5e66":{"x":{},"y":{},"fill":{},"ymax":{},"ymin":{},"width":{}}},"cur_data":"106843145236","visdat":{"106843145236":["function (y) ","x"],"106855de5e66":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
 <section id="pregunta-8" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-8">Pregunta 8</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Especie Nodriza</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Densidad Promedio de Semilla</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Cantidad de Semillas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sauce lloron</td>
+<td style="text-align: right;">2.4166667</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Maiten</td>
+<td style="text-align: right;">1.1944444</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pitra</td>
+<td style="text-align: right;">1.1250000</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Blechnum chilense</td>
+<td style="text-align: right;">0.7750000</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Arrayan</td>
+<td style="text-align: right;">0.5089286</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Aliso</td>
+<td style="text-align: right;">0.4750000</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Temu</td>
+<td style="text-align: right;">0.3809524</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sauce gato</td>
+<td style="text-align: right;">0.1250000</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Abierto</td>
+<td style="text-align: right;">0.0483796</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Junco</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maqui</td>
+<td style="text-align: right;">0.0000000</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
 </section>
 <section id="pregunta-9" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="pregunta-9">Pregunta 9</h2>

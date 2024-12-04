@@ -2,7 +2,7 @@
 title: "Prácticos"
 ---
 
-A la derecha se pueden observar los nueve prácticos ordenados por fecha. A continuación, mostraré un compilado de fotografías destacadas durante el ramo.
+A la izquierda se pueden observar los nueve prácticos ordenados por fecha. A continuación, mostraré un compilado de fotografías destacadas durante el ramo.
 
 ::: {layout-ncol=2}
 
