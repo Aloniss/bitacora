@@ -1,0 +1,152 @@
+---
+title: "Sitematización de datos"
+---
+
+# Características Generales {-}
+  
+1. **Lugar**: Sala 1, Facultad de Ciencias Forestales y Recursos Naturales, UACh, Valdivia
+
+2. **Fecha**: 29 de Octubre de 2024
+    
+
+# Resumen {-}
+
+
+# Descripción de Actividad  {-}
+
+Sitematizamos los datos que obtuvimos en el [Practico 5](prac5_24-09-24.qmd).
+
+
+
+
+
+# Resultados y Comentarios {-}
+
+
+## Pregunta 1 {-}
+
+
+::: {#fig-preg1}
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+library(tidyverse)
+library(readxl)
+library(esquisse)
+library(kableExtra)
+
+parcelas <- read_xlsx("D:/Descargas/PitrantoRest- CBIT .xlsx",
+                     sheet = 2) |> 
+  select(c(ID:DENS_REBROTE))
+
+parcelas |> 
+  group_by(Grupo, Sitio) |> 
+  summarise(cuenta = n()) |> 
+  pivot_wider(names_from = Sitio,
+              values_from = cuenta) |>
+  mutate(across(everything(), ~ replace_na(., 0))) |> 
+  mutate(Total = `1` + `2` + `3` + `4` + `5`) |> 
+  kbl() |> 
+  kable_paper("hover")
+
+```
+
+En este caso, los valores `NA` se interpretaron como 0.
+:::
+
+## Pregunta 2, 3 y 4{-}
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+tabla_resumen <- parcelas |> 
+  filter(Nodriza == TRUE) |> 
+  group_by(Nodriza_sp) |> 
+  rename("Especie Nodriza" = Nodriza_sp) |> 
+  summarise(
+    "Frecuencia de Nodriza" = n(),
+    "Área de parcela" = sum(`Área parcela`)
+  )
+
+# Calcular totales y agregar como nueva fila
+tabla_total <- tabla_resumen |> 
+  summarise(
+    `Especie Nodriza` = "Total",
+    `Frecuencia de Nodriza` = sum(`Frecuencia de Nodriza`),
+    `Área de parcela` = sum(`Área de parcela`)
+  )
+
+# Combinar la tabla original con los totales
+tabla_final <- bind_rows(tabla_resumen, tabla_total)
+
+tabla_final |> 
+  kbl(escape = FALSE,
+      col.names = c("Especie Nodriza", "Frecuencia de Nodriza", "Área de parcela (m<sup>2</sup>)"))  |> 
+  kable_paper("hover") |> 
+  row_spec(nrow(tabla_final), bold = TRUE)
+```
+
+
+## Pregunta 5 {-}
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+parcelas |> 
+  group_by(Nodriza_sp, Sitio) |> 
+  summarise("Densidad de Semillas <br>Promedio" = mean(DENS_SEMILLA),
+            "Densidad de Rebrote <br>Promedio" = mean(DENS_REBROTE)) |> 
+  kbl(escape = F) |> 
+  kable_paper("hover") |>
+  scroll_box(height = "400px")
+```
+
+## Pregunta 6 {-}
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+library(plotly)
+
+p <- parcelas |> 
+  group_by(Sitio) |> 
+  summarise(densiRebrote = mean(DENS_REBROTE),
+            densiSemilla = mean(DENS_SEMILLA)) |> 
+  rename(`Densidad de Rebrote` = "densiRebrote",
+         `Densidad de Semillas` = "densiSemilla") |> 
+  pivot_longer(cols = c(`Densidad de Rebrote`, `Densidad de Semillas`),
+               names_to = "Tipo",
+               values_to = "Densidad") |> 
+  ggplot(aes(x = Sitio,
+             y = Densidad,
+             fill = Tipo)) +
+  geom_bar(stat = "identity",
+           position = "dodge") +
+  theme_bw() +
+  coord_cartesian(expand = F,
+                  xlim = c(0.1,5.9),
+                  ylim = c(0, 2.4)) 
+
+ggplotly(p)
+
+```
+
+
+## Pregunta 7 {-}
+
+
+## Pregunta 8 {-}
+
+
+## Pregunta 9 {-}
+
+
+
+
+
+
+

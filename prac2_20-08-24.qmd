@@ -2,7 +2,7 @@
 title: "Acción (fallida) de restauración CEFOR"
 ---
 
-# Carácteristicas Generales {-}
+# Características Generales {-}
   
 1. **Lugar**:  Arboretum, Valdivia.
 
@@ -294,12 +294,6 @@ En el predio se observaron numerosos rebrotes de aromo, especialmente en tocones
 # Foto del día {-}
 
 ![](recursos/p2/copiwe.jpg)
-
-
-
-
-
-
 
 
 

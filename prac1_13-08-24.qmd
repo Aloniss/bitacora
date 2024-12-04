@@ -2,7 +2,7 @@
 title: "Práctico de Amenazas (Encuesta)"
 ---
 
-# Carácteristicas Generales {-}
+# Características Generales {-}
   
 1. **Lugar**: Isla Teja, Valdivia
     

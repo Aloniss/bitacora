@@ -1,0 +1,54 @@
+---
+title: "Visita Senderos del Bosque"
+---
+
+# Características Generales {-}
+  
+1. **Lugar**: Senderos del Bosque, Valdivia, Chile.
+
+2. **Fecha**: 19 de Noviembre de 2024
+    
+# Resumen {-}
+
+Senderos del Bosque es un área protegida privada en Valdivia, Chile, creada por Claudio Donoso, que ha logrado convertirse en un caso exitoso de restauración ecosistémica mediante plantaciones y conservación de remanentes del bosque original. Fuimos de visita a que nos contaran acerca del lugar y a charlar acerca de algunas problemáticas que tenían. 
+
+# Descripción de Actividad  {-}
+
+Este bosque es un área protegida privada creada por Claudio Donoso, que colinda con el Santuario de la Naturaleza Llancahue. Sin embargo, esta primera área no cuenta con delimitaciones ni cartografías oficiales (como las disponibles en el Geoportal de Simbio o en alguna página web oficial), por lo que no es posible determinar su extensión exacta. Históricamente, el sitio se encontraba en un estado de alta degradación, pero Claudio Donoso llevó a cabo importantes esfuerzos de restauración ecológica, incluyendo intervenciones tanto in situ como ex situ. Se implementaron plantaciones a diferentes alturas de la cuenca, utilizando principalmente viveros de la Universidad de Chile (UCh) y la Universidad Austral de Chile (UACh). Además, algunos remanentes del bosque original, con árboles que superan los 200 años de antigüedad, lograron preservarse.
+
+Fuimos recorriendo estaciones divididos en dos grupos. Uno de los puntos destacados es una plantación de coigüe (*Nothofagus dombeyi*) del año 1988, que fue una de las primeras en establecerse en los senderos. Esta plantación muestra diferentes combinaciones de especies, tales como coigüe , roble (*Nothofagus obliqua*) y alerce (*Fitzroya cupressoides*).
+
+El lugar, que originalmente era un peladero, presentaba un nivel extremo de degradación (es posible evaluar este estado mediante índices como *NDVI*). Antes de las intervenciones, el bosque de Llancahue estaba compuesto principalmente por especies como lingue (*Persea lingue*), olivillo (*Aextoxicon punctatum*), laurel (*Laurelia sempervirens*) y mañío (*Podocarpus nubigenus*). En la actualidad, gracias a las restauraciones, algunas especies nativas como mirtáceas han llegado de forma espontánea. Cámaras trampa han registrado la presencia de fauna nativa como pudú (*Pudu puda*), monito del monte (*Dromiciops gliroides*), zorro chilla (*Lycalopex griseus*) y guiña (*Leopardus guigna*), aunque también se han observado perros en la zona.
+
+Un caso interesante es el de un pitao (*Pitavia punctata*) plantado experimentalmente, que dio lugar a la formación de un bosque completo de pitao. También había una zona de tepuales, donde se observa una sucesión ecológica en la que el coigüe es reemplazado por pitao y este, a su vez, por tepu (*Tepualia stipularis*).
+
+En esta área también hubo un histórico lavadero de oro que funcionó a finales del siglo XIX. Los restos del cerro donde se extraía oro ahora están cubiertos por bosque, debido a la acumulación de tierra y roca que permitió el desarrollo vegetal.
+
+En la zona además hay un río, donde su caudal nunca se extingue y su pureza se mantiene, en parte gracias a la presencia de bosque nativo. Sin embargo, la relación con las comunidades vecinas no es del todo buena. Algunas familias cercanas, aproximadamente 500 viviendas, dependen de pozos y camiones aljibe debido a problemas de abastecimiento de agua. Además, la extracción ilegal de madera es un problema frecuente en el sector, con tala de especies importantes. Aunque se han realizado denuncias a CONAF, la situación persiste y genera tensiones con los propietarios del área.
+
+En términos ecológicos, se plantaron coigües en 1992 y tepas en 1999. Con el tiempo, el coigüe creció y suprimió a la tepa, dejándola en una forma herbácea. Sin embargo, esta última permanece en el área con potencial para desarrollarse nuevamente en un futuro, cuando los coigües mueran. Las tepas suelen preferir zonas ribereñas, y su presencia disminuye a medida que se aumenta la altitud.
+
+Por último, en el sitio se encuentra el fruto del copihue, la enredadera nacional de Chile (*Lapageria rosea*), que añade un valor ecológico y cultural significativo al área.
+
+# Resultados y Comentarios {-}
+
+::: {#fig-sucesion layout-ncol=2}
+
+![Individuo de la especie *Eupsophus vertebralis* presente en el bosque.](recursos/p9/sapo.jpg){#fig-zapo}
+
+![Tronco caído, el cual se mantendrá inserto en la naturaleza.](recursos/p9/sucesion.jpg){#fig-susecion}
+
+Biodiversidad y sucesión dentro del bosque.
+:::
+
+Sin duda, Senderos del Bosque es un ejemplo exitoso de restauración ecosistémica, gracias al trabajo de la familia Donoso en labores tanto de plantación como de conservación. No obstante, este proyecto no está exento de desafíos. A diferencia de lo observado en la experiencia de Mashue ([Práctico 7](prac7_22-10-24.qmd)), aquí el compromiso por conservar parece recaer únicamente en los propietarios del predio. Se comentó ampliamente que los vecinos aledaños al área muestran resistencia a la conservación, incluso llegando a realizar descalificaciones o cometer delitos, como la tala ilegal. Además, se señaló que los habitantes del sector enfrentan problemas de acceso al agua, al igual que en Mashue. Si existiera mayor conciencia ambiental, los vecinos podrían beneficiarse del abastecimiento de agua desde la cuenca del bosque. Este caso pone de manifiesto, una vez más, la importancia de fomentar un compromiso conjunto entre la conservación y la comunidad, ya que, en este caso, la desinformación parece estar afectando negativamente a los propios vecinos.
+
+![Río de la cuenca del bosque.](recursos/p9/awa.jpg){#fig-awa}
+
+Finalmente, cerramos el curso con reflexiones generales sobre las experiencias vividas. Personalmente, disfruté mucho las salidas a terreno, ya que este es uno de los primeros cursos con un enfoque tan intensivo en actividades prácticas. Además, permitió aprender *in situ* sobre los problemas ambientales asociados a lo social, su desarrollo, dirección y objetivos. Fue una experiencia enriquecedora, que abarcó desde aprendizajes gratificantes en el ámbito natural y social, hasta el conocimiento técnico, como la elaboración de muestreos sistemáticos para construir una base de datos común.
+
+Entre las críticas al curso, coincido con algunos comentarios realizados. Si bien exploramos casos locales, sería interesante incluir ejemplos de otras localidades o regiones, considerando que las necesidades pueden variar significativamente. No obstante, esta es solo una sugerencia, ya que considero que el curso, tal como está diseñado, cumple con sus objetivos de manera excelente.
+
+# Foto del día {-}
+
+![](recursos/p9/deldia.jpg)

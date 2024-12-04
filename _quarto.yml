@@ -11,9 +11,6 @@ website:
       - text: Prácticos
         href: practicosIntro.qmd
 
-      - text: Metodología
-        href: meto.qmd
-
     right:
       - text: Agradecimientos
         href: agra.qmd

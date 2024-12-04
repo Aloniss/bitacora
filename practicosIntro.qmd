@@ -2,4 +2,45 @@
 title: "Prácticos"
 ---
 
-Aquí fotos de los mejores momentos.
+A la derecha se pueden observar los nueve prácticos ordenados por fecha. A continuación, mostraré un compilado de fotografías destacadas durante el ramo.
+
+::: {layout-ncol=2}
+
+![](recursos/destacadas/1733028536134.jpg)
+
+![](recursos/destacadas/1733107446489.jpg)
+
+:::
+
+::: {layout-ncol=2}
+
+![](recursos/destacadas/1733002892437.jpg)
+
+![](recursos/destacadas/1733002892426.jpg)
+
+![](recursos/destacadas/1733002359799.jpg)
+
+![](recursos/destacadas/1733001977489.jpg)
+
+:::
+
+::: {layout-ncol=1}
+
+![](recursos/destacadas/1733003553294.jpg)
+
+![](recursos/destacadas/1733003553204.jpg)
+
+![](recursos/destacadas/1733003553175.jpg)
+
+![](recursos/destacadas/1733003553348.jpg)
+
+:::
+
+::: {layout-ncol=2}
+
+![](recursos/destacadas/deldia.jpg)
+
+![](recursos/destacadas/WhatsApp Image 2024-12-03 at 08.36.07.jpeg)
+:::
+
+![](recursos/destacadas/1733107446873.jpg)

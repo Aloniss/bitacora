@@ -1,8 +1,8 @@
 ---
-title: "Visita vivero Huillilemu y Boque Chucaypulli"
+title: "Visita vivero Huillilemu y Bosque Chucaypulli"
 ---
 
-# Carácteristicas Generales {-}
+# Características Generales {-}
 
 1. **Lugar**: Cercanias de San José de Mariquina, Región de Los Ríos, Chile.
 
@@ -10,6 +10,7 @@ title: "Visita vivero Huillilemu y Boque Chucaypulli"
 
 # Resumen {-}
 
+Se visitó el vivero Huillilemu y al bosque Chucaypulli, destacando prácticas de manejo forestal y conservación. En el vivero, se estudian especies nativas y se promueven técnicas para mejorar su calidad genética y resistencia climática, vinculadas al programa “Siembra por Chile”. En Chucaypulli, se evaluó la regeneración tras un incendio, observando sucesión secundaria en áreas afectadas. Ambas incluyen apoyo de CONAF acerca de reforestación.
 
 # Descripción de Actividad  {-}
 
