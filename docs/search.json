@@ -215,7 +215,7 @@
     "href": "prac8_29-10-24.html#pregunta-7",
     "title": "Análisis y sistematización de datos",
     "section": "Pregunta 7",
-    "text": "Pregunta 7",
+    "text": "Pregunta 7\n\n\n\n\n\n\nExiste una clara diferencia en la densidad de semillas dentro y fuera de plantas nodrizas. Esto confirma que el efecto que puede tener este tipo de plantas es beneficioso para la regeneración.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -226,7 +226,7 @@
     "href": "prac8_29-10-24.html#pregunta-8",
     "title": "Análisis y sistematización de datos",
     "section": "Pregunta 8",
-    "text": "Pregunta 8\n\n\n\n\n\nEspecie Nodriza\nDensidad Promedio de Semilla\nCantidad de Semillas\n\n\n\n\nSauce lloron\n2.4166667\n13\n\n\nMaiten\n1.1944444\n39\n\n\nPitra\n1.1250000\n18\n\n\nBlechnum chilense\n0.7750000\n31\n\n\nArrayan\n0.5089286\n29\n\n\nAliso\n0.4750000\n12\n\n\nTemu\n0.3809524\n8\n\n\nSauce gato\n0.1250000\n2\n\n\nAbierto\n0.0483796\n13\n\n\nJunco\n0.0000000\n0\n\n\nMaqui\n0.0000000\n0",
+    "text": "Pregunta 8\n\n\n\n\n\nEspecie Nodriza\nDensidad Promedio de Semilla\nCantidad de Semillas\n\n\n\n\nSauce lloron\n2.4166667\n13\n\n\nMaiten\n1.1944444\n39\n\n\nPitra\n1.1250000\n18\n\n\nBlechnum chilense\n0.7750000\n31\n\n\nArrayan\n0.5089286\n29\n\n\nAliso\n0.4750000\n12\n\n\nTemu\n0.3809524\n8\n\n\nSauce gato\n0.1250000\n2\n\n\nAbierto\n0.0483796\n13\n\n\nJunco\n0.0000000\n0\n\n\nMaqui\n0.0000000\n0\n\n\n\n\n\n\n\nExiste una clara diferencia en especies como el Junco o Maqui que no tienen regeneración, con especies como el sauce llorón, por lo que se podría argumentar que la especie nodriza si podría tener cierto efecto ante la regeneración.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"
@@ -237,7 +237,7 @@
     "href": "prac8_29-10-24.html#pregunta-9",
     "title": "Análisis y sistematización de datos",
     "section": "Pregunta 9",
-    "text": "Pregunta 9",
+    "text": "Pregunta 9\nBajo qué especie de planta nodriza hay mayor reclutamiento de: Arrayán, Maitén, Pitra.\n\n\n\n\n\nNodriza_sp\nArrayán\nPitra\nMaitén\n\n\n\n\nArrayan\n0.6376812\n0.0724638\n0.0434783\n\n\nPitra\n0.1093750\n0.4375000\n0.0156250\n\n\nAbierto\n0.3962264\n0.0943396\n0.0188679\n\n\nMaiten\n0.2702703\n0.0270270\n0.3783784\n\n\nTemu\n0.3387097\nNA\nNA\n\n\nMaqui\n0.3000000\nNA\nNA\n\n\nBlechnum chilense\n0.2000000\n0.2666667\n0.2000000\n\n\nSauce gato\n0.2500000\nNA\nNA\n\n\nSauce lloron\n0.2179487\n0.1025641\nNA\n\n\nAliso\n0.0625000\n0.1250000\n0.1250000\n\n\n\n\n\n\n\nSegún mis resultados, para el arrayán se tiene un mayor reclutamiento bajo miembros de su misma especie, y en dosél abierto. Para la Pitra, se tiene un mayor reclutamiento con nodrizas de Pitra y Costilla de Vaca. Por último, para el Maitén se tiene un mayor reclutamiento bajo Mitén y Costilla de Vaca. Esto señala que las tres especies mencionadas hay mayor reclutamiento bajo individuos de su misma especie. De no ser así, con individuos asociados a su ambiente, como la costilla de Vaca. Sin embargo, debido a las discrepancias con los resultados obtenidos, puede que mis cálculos se encuentren errados.",
     "crumbs": [
       "Prácticos",
       "29 de Octubre"

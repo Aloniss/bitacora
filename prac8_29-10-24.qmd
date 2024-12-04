@@ -11,6 +11,7 @@ title: "Análisis y sistematización de datos"
 
 # Resumen {-}
 
+Se analizaron los datos obtenidos en el práctico 5, respondiedo a preguntas relacionadas con la influencia de plantas nodrizas y reclutamiento de especies.
 
 # Descripción de Actividad  {-}
 
@@ -191,6 +192,9 @@ ggplotly(apa)
 
 ```
 
+Existe una clara diferencia en la densidad de semillas dentro y fuera de plantas nodrizas. Esto confirma que el efecto que puede tener este tipo de plantas es beneficioso para la regeneración.
+
+
 ## Pregunta 8 {-}
 
 ```{r}
@@ -207,11 +211,46 @@ parcelas |>
   kable_paper("hover")
 ```
 
+Existe una clara diferencia en especies como el Junco o Maqui que no tienen regeneración, con especies como el sauce llorón, por lo que se podría argumentar que la especie nodriza si podría tener cierto efecto ante la regeneración. 
+
 ## Pregunta 9 {-}
 
+Bajo qué especie de planta nodriza hay mayor reclutamiento de: Arrayán, Maitén, Pitra.
 
 
+```{r}
+#| echo: false
+#| warning: false
+#| fig-align: center
+rege <- read_xlsx("D:/Descargas/PitrantoRest- CBIT .xlsx",
+                  sheet = 3) |> 
+  select(c(IDPOC:Nodriza_Alto)) |> 
+  mutate(Cantidad = as.numeric(Cantidad))
+
+parte1 <- rege |>
+  group_by(Nodriza_sp) |> 
+  summarise(superf_spp = sum(Área.parcela)) |> 
+  ungroup()
 
 
+parte2 <- rege |> 
+  group_by(Especie, Nodriza_sp) |> 
+  summarise(nIndi = sum(Cantidad, na.rm = T)) |> 
+  ungroup()
 
 
+parte1 |> 
+  right_join(parte2,
+             by = "Nodriza_sp") |> 
+  filter(Especie == "Arrayán" | Especie == "Maitén" | Especie == "Pitra") |> 
+  group_by(Nodriza_sp, Especie) |> 
+  summarise(densidad = nIndi/superf_spp) |> 
+  filter(! is.na(Nodriza_sp)) |> 
+  arrange(desc(densidad)) |> 
+  pivot_wider(names_from = Especie,
+              values_from = densidad) |> 
+  kbl() |> 
+  kable_paper("hover")
+```
+
+Según mis resultados, para el arrayán se tiene un mayor reclutamiento bajo miembros de su misma especie, y en dosél abierto. Para la Pitra, se tiene un mayor reclutamiento con nodrizas de Pitra y Costilla de Vaca. Por último, para el Maitén se tiene un mayor reclutamiento bajo Mitén y Costilla de Vaca. Esto señala que las tres especies mencionadas hay mayor reclutamiento bajo individuos de su misma especie. De no ser así, con individuos asociados a su ambiente, como la costilla de Vaca. Sin embargo, debido a las discrepancias con los resultados obtenidos, puede que mis cálculos se encuentren errados.
